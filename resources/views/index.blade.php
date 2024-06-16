@@ -55,7 +55,7 @@
 
     {{-- <section>@include('header')</section> --}}
 
-    <header>
+    <header class="position-fixed w-100" style="z-index: 10000;background-color: white">
         <div class="" style="background-color: #273272;color:white">
             <div class="container">
                 <div class="row">
@@ -112,7 +112,8 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="bi bi-list"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: white;z-index:10000;">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent"
+                        style="background-color: white;z-index:10000;">
                         <span>
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color:#273272;">
                                 <li class="nav-item">
@@ -123,27 +124,94 @@
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         Services
                                     </a>
-                                    <ul class="dropdown-menu p-5" style="width: 100%;z-index:10000; background-color:white">
+                                    <ul class="dropdown-menu p-5"
+                                        style="width: 100%;z-index:10000; background-color:white">
                                         <div class="row">
                                             <div class="col-12 col-md-4 col-sm-6">
                                                 <div class="h5">
                                                     <span><i class="bi bi-phone-fill"></i></span> Mobile App
                                                     Development
                                                 </div>
-                                                <div><a href="https://ezcatch.co.in/wp/ios-app-development/">iOS App Development</a></div>
-                                                <div><a href="https://ezcatch.co.in/wp/android-app-development/">Android App Development</a></div>
-                                                <div><a href="https://ezcatch.co.in/wp/swift-app-development-company/">Swift App Development</a></div>
-                                                <div><a href="https://ezcatch.co.in/wp/ipad-app-development-company/">iPad App Developemnt</a></div>
-                                                <div><a href="">Smart Watch App Development</a></div>
-                                                <div><a href="">IOT App Development</a></div>
-                                                <div><a href="">Flutter App Development</a></div>
-                                                <div><a href="">AR & VR Development</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/ios-app-development/">iOS App
+                                                        Development</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/android-app-development/">Android
+                                                        App Development</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/swift-app-development-company/">Swift
+                                                        App Development</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/ipad-app-development-company/">iPad
+                                                        App Developemnt</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/smart-watch-development-company/">Smart
+                                                        Watch App Development</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/iot-app-development/">IOT App
+                                                        Development</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/flutter-app-development/">Flutter
+                                                        App Development</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/ar-vr-development/">AR & VR
+                                                        Development</a></div>
                                             </div>
                                             <div class="col-12 col-md-4 col-sm-6">
-
+                                                <div class="h5">
+                                                    <span><i class="bi bi-basket2-fill"></i></span> WEB/CMS & ECOMMERCE
+                                                </div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/php-development/">PHP
+                                                        Development</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/laravel-development">Laravel
+                                                        Development</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/angularjs-development">Angularjs
+                                                        Development</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/wordpress-development">WordPress
+                                                        Developemnt</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/woocommerce-development">WooCommerce
+                                                        Development</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/magento-development">Magento
+                                                        Development</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/shopify-development">Shopify
+                                                        App Development</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/python-development">Python
+                                                        Development</a></div>
                                             </div>
                                             <div class="col-12 col-md-4 col-sm-6">
+                                                <div class="h5">
+                                                    <span><i class="bi bi-graph-up-arrow"></i></span> DIGITAL MARKETING
+                                                </div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/search-engine-optimization">SEO
+                                                        (Search Engine Optimization)</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/social-media-marketing">SMM
+                                                        (Social Media Marketing)</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/search-engine-marketing/">SEM
+                                                        (Social Engine Marketing)</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/app-store-optimization">App
+                                                        Store Optimization</a></div>
 
+                                                <div class="h5 mt-3">
+                                                    <span><i class="bi bi-plus-circle-fill"></i></span> OTHER SERVICES
+                                                </div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/android-app-development/">UI/UX
+                                                        Design & Development</a></div>
+                                                <div class="mb-1"><a
+                                                        href="https://ezcatch.co.in/wp/android-app-development/">Testing
+                                                        and Quality Assurance</a></div>
                                             </div>
                                         </div>
                                     </ul>
@@ -185,7 +253,7 @@
                             </ul>
                         </span>
                     </div>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center d-none d-md-inline">
                         <a class="btn btn-primary">Contact Us</a>
                     </div>
                 </div>
