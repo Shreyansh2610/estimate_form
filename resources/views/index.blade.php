@@ -44,7 +44,8 @@
             font-style: normal;
         }
 
-        span.error {
+        span.error,
+        .required {
             color: red;
         }
     </style>
@@ -254,7 +255,7 @@
                         </span>
                     </div>
                     <div class="d-flex justify-content-center d-none d-md-inline">
-                        <a class="btn btn-primary">Contact Us</a>
+                        <a class="btn btn-primary" href="https://ezcatch.co.in/contact-us/">Contact Us</a>
                     </div>
                 </div>
             </nav>
@@ -291,30 +292,28 @@
                                 <div class="step-inner-content">
                                     <span class="step-no">Step 1</span>
                                     <h2 class="pt-2">Tell Us About Your Business</h2>
-                                    <p>Help us get to know you better! Share your company's essential details so we can
-                                        tailor our services to your needs. Please fill in the form with your full name,
-                                        email, phone number, and company information. Your website URL will give us more
-                                        insight into your online presence. We look forward to collaborating with you!
+                                    <p>Tell us about your company! Share your details, so we can better serve you. We
+                                        look forward to working together!
                                     </p>
                                     <div class="step-box">
                                         <div class="row">
                                             <div class="col-md-12 form-inner-area">
                                                 <label for="full_name">
-                                                    <h3>Full name</h3>
+                                                    <h3>Full name<span class="required">*</span></h3>
                                                 </label>
                                                 <input type="text" id="full_name" name="full_name"
                                                     class="form-control" placeholder="Enter Full name">
                                             </div>
                                             <div class="col-md-12 form-inner-area">
                                                 <label for="mail">
-                                                    <h3>Mail</h3>
+                                                    <h3>Mail<span class="required">*</span></h3>
                                                 </label>
                                                 <input type="email" id="mail" name="mail"
                                                     class="form-control" placeholder="Enter mail">
                                             </div>
                                             <div class="col-md-12 form-inner-area">
                                                 <label for="country">
-                                                    <h3>Country</h3>
+                                                    <h3>Country<span class="required">*</span></h3>
                                                 </label>
                                                 <input type="text" id="country" name="country"
                                                     class="form-control" placeholder="Entry Country">
@@ -322,14 +321,14 @@
                                             <div class="col-md-12 form-inner-area">
                                                 <label for="phone_number">
                                                     <h3>
-                                                        Phone Number</h3>
+                                                        Phone Number<span class="required">*</span></h3>
                                                 </label>
                                                 <input type="text" id="phone_number" name="phone_number"
                                                     class="form-control" placeholder="Write Phone number">
                                             </div>
                                             <div class="col-md-12 form-inner-area">
                                                 <label for="company_name">
-                                                    <h3>Company name</h3>
+                                                    <h3>Company name<span class="required">*</span></h3>
                                                 </label>
                                                 <input type="text" id="company_name" name="company_name"
                                                     class="form-control" placeholder="Enter Company name">
@@ -375,33 +374,32 @@
 
                                     <h2>Define Your Vision</h2>
                                     <p>
-                                        Let's bring your project to life! Tell us what you're looking to achieve. Please
-                                        provide a brief description of your project, including your goals and
-                                        expectations. You can also upload any supporting documents or files. While your
-                                        budget is optional, giving us an idea can help in tailoring our proposal to suit
-                                        your needs. Select your preferences and describe your project thoroughly to help
-                                        us understand your vision better
+                                        Help us bring your project to life! Briefly describe your project goals and
+                                        expectations. You can upload any supporting files. Sharing your budget is
+                                        optional but helps tailor our proposal. Please provide details to help us
+                                        understand your vision.
                                     </p>
 
                                     <div class="row">
                                         <div class="col-md-12 form-inner-area language-select mb-2">
                                             <label for="budget">
-                                                <h3>Budget</h3>
+                                                <h3>Budget<span class="required">*</span></h3>
                                             </label>
                                             {{-- <input type="text" id="full_name" name="full_name" class="form-control" placeholder="Enter Full name"> --}}
                                             <select name="budget" id="budget" class="form-control">
                                                 <option value="">Select Budget</option>
-                                                <option> 0 - 100 $</option>
-                                                <option> 101 - 500 $</option>
-                                                <option> 501 - 1000 $</option>
-                                                <option> More than 1000 $</option>
+                                                <option> Under 1000 &#8364;</option>
+                                                <option> 1000 to 4000 &#8364;</option>
+                                                <option> 5000 to 8000 &#8364;</option>
+                                                <option> 9000 to 12000 &#8364;</option>
+                                                <option> More than 12000 &#8364;</option>
                                             </select>
                                         </div>
 
                                         <div class="col-md-12 form-inner-area mb-1">
                                             <div class="comment-box">
                                                 <label for="project_brief">
-                                                    <h3>About Project</h3>
+                                                    <h3>About Project<span class="required">*</span></h3>
                                                 </label>
                                                 <textarea name="project_brief" id="project_brief" class="form-control" rows="5"
                                                     placeholder="Describe your project briefly"></textarea>
@@ -460,13 +458,12 @@
                                         </div>
                                     </div>
                                     <h2>Book a Discovery Call</h2>
-                                    <p>Ready to dive into the details? Schedule a call with our team to discuss your
-                                        project further. Choose your preferred date and time from the calendar and
-                                        select your desired meeting platform – Zoom or Google Meet. We'll align our
-                                        schedules based on your time zone to ensure a smooth and convenient
-                                        conversation. Let’s connect and start planning your project!</p>
+                                    <p>Let’s discuss your project! Schedule a call with us by picking a date and time
+                                        that suits you. Choose your preferred meeting platform – Zoom or Google Meet.
+                                        We’ll match our schedules to your time zone for a seamless conversation. We look
+                                        forward to planning with you!</p>
                                     <div class="language-select form-inner-area">
-                                        <h3 for="time_zone">Time zome </h3>
+                                        <h3 for="time_zone">Time zome<span class="required">*</span></h3>
                                         <select name="time_zone">
                                             <option value="">Select time zone</option>
                                             <option value='(GMT+00:00) Default (GMT+00:00) Default'>(GMT+00:00) Default
@@ -684,15 +681,15 @@
 
                                     <div class="step-content-field">
                                         <div class="form-inner-area">
-                                            <h3 for="meeting">Date</h3>
+                                            <h3 for="meeting">Date<span class="required">*</span></h3>
                                         </div>
                                         <div class="date-picker date datepicker">
                                             <input type="text" name="date" id="date"
                                                 class="form-control">
-                                            <div class="input-group-append"><span>ADD TIME</span></div>
+                                            <div class="input-group-append"><span>ADD DATE</span></div>
                                         </div>
                                         <div class="form-inner-area">
-                                            <h3 for="meeting">Meeting</h3>
+                                            <h3 for="meeting">Meeting<span class="required">*</span></h3>
                                         </div>
                                         <div class="plan-area">
                                             <div class="plan-icon-text text-center active">
