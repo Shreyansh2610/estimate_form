@@ -48,6 +48,19 @@
         .required {
             color: red;
         }
+
+        .next-btn {
+            width: 150px !important;
+            height: 55px !important;
+            line-height: 50px !important;
+            background-color: black !important;
+            color: white !important;
+        }
+
+        .next-btn:hover {
+            background-color: white !important;
+            color: black !important;
+        }
     </style>
 
 </head>
@@ -57,7 +70,7 @@
     {{-- <section>@include('header')</section> --}}
 
     <header class="position-fixed w-100" style="z-index: 10000;background-color: white">
-        <div class="" style="background-color: #273272;color:white">
+        <div class="py-2" style="background-color: #273272;color:white">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-6">
@@ -107,152 +120,209 @@
                 <div class="container-fluid px-0 d-flex justify-content-between">
                     <img width="150" height="50"
                         src="https://ezcatch.co.in/wp-content/uploads/2024/05/ez-logo.png" alt="">
+                    <div class="d-grid justify-content-end justify-content-lg-center">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="bi bi-list"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent"
+                            style="background-color: white;z-index:10000;">
+                            <span>
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color:#273272;">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item dropdown" style="position: initial;">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Services
+                                        </a>
+                                        <div class="dropdown-menu p-5"
+                                            style="width: 100%;z-index:10000; background-color:white">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="h5">
+                                                        <span><i class="bi bi-phone-fill"></i></span> Mobile App
+                                                        Development
+                                                    </div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/ios-app-development/">iOS
+                                                            App
+                                                            Development</a></div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/android-app-development/">Android
+                                                            App Development</a></div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/swift-app-development-company/">Swift
+                                                            App Development</a></div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/ipad-app-development-company/">iPad
+                                                            App Developemnt</a></div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/smart-watch-development-company/">Smart
+                                                            Watch App Development</a></div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/iot-app-development/">IOT
+                                                            App
+                                                            Development</a></div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/flutter-app-development/">Flutter
+                                                            App Development</a></div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/ar-vr-development/">AR & VR
+                                                            Development</a></div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="h5">
+                                                        <span><i class="bi bi-basket2-fill"></i></span> WEB/CMS &
+                                                        ECOMMERCE
+                                                    </div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/php-development/">PHP
+                                                            Development</a></div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/laravel-development">Laravel
+                                                            Development</a></div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/angularjs-development">Angularjs
+                                                            Development</a></div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/wordpress-development">WordPress
+                                                            Developemnt</a></div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/woocommerce-development">WooCommerce
+                                                            Development</a></div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/magento-development">Magento
+                                                            Development</a></div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/shopify-development">Shopify
+                                                            App Development</a></div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/python-development">Python
+                                                            Development</a></div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="h5">
+                                                        <span><i class="bi bi-graph-up-arrow"></i></span> DIGITAL
+                                                        MARKETING
+                                                    </div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/search-engine-optimization">SEO
+                                                            (Search Engine Optimization)</a></div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/social-media-marketing">SMM
+                                                            (Social Media Marketing)</a></div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/search-engine-marketing/">SEM
+                                                            (Social Engine Marketing)</a></div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/app-store-optimization">App
+                                                            Store Optimization</a></div>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="bi bi-list"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent"
-                        style="background-color: white;z-index:10000;">
-                        <span>
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color:#273272;">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item dropdown" style="position: initial;">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Services
-                                    </a>
-                                    <ul class="dropdown-menu p-5"
-                                        style="width: 100%;z-index:10000; background-color:white">
-                                        <div class="row">
-                                            <div class="col-12 col-md-4 col-sm-6">
-                                                <div class="h5">
-                                                    <span><i class="bi bi-phone-fill"></i></span> Mobile App
-                                                    Development
+                                                    <div class="h5 mt-3">
+                                                        <span><i class="bi bi-plus-circle-fill"></i></span> OTHER
+                                                        SERVICES
+                                                    </div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/ui-ux-design-development">UI/UX
+                                                            Design & Development</a></div>
+                                                    <div class="mb-1"><a
+                                                            href="https://ezcatch.co.in/wp/testing-and-quality-assurance">Testing
+                                                            and Quality Assurance</a></div>
                                                 </div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/ios-app-development/">iOS App
-                                                        Development</a></div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/android-app-development/">Android
-                                                        App Development</a></div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/swift-app-development-company/">Swift
-                                                        App Development</a></div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/ipad-app-development-company/">iPad
-                                                        App Developemnt</a></div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/smart-watch-development-company/">Smart
-                                                        Watch App Development</a></div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/iot-app-development/">IOT App
-                                                        Development</a></div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/flutter-app-development/">Flutter
-                                                        App Development</a></div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/ar-vr-development/">AR & VR
-                                                        Development</a></div>
-                                            </div>
-                                            <div class="col-12 col-md-4 col-sm-6">
-                                                <div class="h5">
-                                                    <span><i class="bi bi-basket2-fill"></i></span> WEB/CMS & ECOMMERCE
-                                                </div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/php-development/">PHP
-                                                        Development</a></div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/laravel-development">Laravel
-                                                        Development</a></div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/angularjs-development">Angularjs
-                                                        Development</a></div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/wordpress-development">WordPress
-                                                        Developemnt</a></div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/woocommerce-development">WooCommerce
-                                                        Development</a></div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/magento-development">Magento
-                                                        Development</a></div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/shopify-development">Shopify
-                                                        App Development</a></div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/python-development">Python
-                                                        Development</a></div>
-                                            </div>
-                                            <div class="col-12 col-md-4 col-sm-6">
-                                                <div class="h5">
-                                                    <span><i class="bi bi-graph-up-arrow"></i></span> DIGITAL MARKETING
-                                                </div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/search-engine-optimization">SEO
-                                                        (Search Engine Optimization)</a></div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/social-media-marketing">SMM
-                                                        (Social Media Marketing)</a></div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/search-engine-marketing/">SEM
-                                                        (Social Engine Marketing)</a></div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/app-store-optimization">App
-                                                        Store Optimization</a></div>
-
-                                                <div class="h5 mt-3">
-                                                    <span><i class="bi bi-plus-circle-fill"></i></span> OTHER SERVICES
-                                                </div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/android-app-development/">UI/UX
-                                                        Design & Development</a></div>
-                                                <div class="mb-1"><a
-                                                        href="https://ezcatch.co.in/wp/android-app-development/">Testing
-                                                        and Quality Assurance</a></div>
                                             </div>
                                         </div>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Industries
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Resources
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Case Studies</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Company
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Protfolio</a></li>
-                                        <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                                        <li><a class="dropdown-item" href="#">About Us</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </span>
+                                    </li>
+                                    <li class="nav-item dropdown" style="position: initial;">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Industries
+                                        </a>
+                                        <ul class="dropdown-menu p-5"
+                                            style="width: 100%;z-index:10000; background-color:white">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4 col-sm-6">
+                                                    <div class="mb-3"><a
+                                                            href="https://ezcatch.co.in/wp/travel-app-development-company/"><i
+                                                                class="bi bi-building"></i> Travel &amp;
+                                                            Hospitality</a></div>
+                                                    <div class="mb-3"><a
+                                                            href="https://ezcatch.co.in/wp/education-service-development-company/"><i
+                                                                class="bi bi-book-fill"></i> Education
+                                                            &amp; Learning</a></div>
+                                                    <div class="mb-3"><a
+                                                            href="https://ezcatch.co.in/wp/social-networking-app-development-company/"><i
+                                                                class="bi bi-people-fill"></i> Social
+                                                            Networking</a></div>
+                                                    <div><a
+                                                            href="https://ezcatch.co.in/wp/energy-utilities-service-company/"><i
+                                                                class="bi bi-lightbulb"></i> Energy
+                                                            Utilities</a></div>
+                                                </div>
+                                                <div class="col-12 col-md-4 col-sm-6">
+                                                    <div class="mb-3"><a
+                                                            href="https://ezcatch.co.in/wp/real-estate-development-service/"><i
+                                                                class="bi bi-home"></i> Real Estate</a></div>
+                                                    <div class="mb-3"><a
+                                                            href="https://ezcatch.co.in/wp/fitness-wellness-service-company/"><i
+                                                                class="bi bi-person-walking"></i> Fitness &
+                                                            Wellness</a>
+                                                    </div>
+                                                    <div class="mb-3"><a
+                                                            href="https://ezcatch.co.in/wp/ecommerce-development-company/"><i
+                                                                class="bi bi-cart-fill"></i> E Commerce</a></div>
+                                                    <div><a href="https://ezcatch.co.in/wp/sports-service-company/"><i
+                                                                class="bi bi-bicycle"></i> Sport & Games</a></div>
+                                                </div>
+
+                                                <div class="col-12 col-md-4 col-sm-6">
+                                                    <div class="mb-3"><a
+                                                            href="https://ezcatch.co.in/wp/healthcare-and-medical-development-services/"><i
+                                                                class="bi bi-bag-plus"></i> Medical & Healthcare</a>
+                                                    </div>
+                                                    <div class="mb-3"><a
+                                                            href="https://ezcatch.co.in/wp/fintech-company/"><i
+                                                                class="bi bi-bank"></i> Banking & Finance</a></div>
+                                                    <div class="mb-3"><a
+                                                            href="https://ezcatch.co.in/wp/logistic-development/"><i
+                                                                class="bi bi-train-freight-front"></i> Logistics &
+                                                            Distributions</a></div>
+                                                    <div><a
+                                                            href="https://ezcatch.co.in/wp/media-entertainment-app-development-services/"><i
+                                                                class="bi bi-film"></i> Media & Entertainment</a></div>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Resources
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="https://ezcatch.co.in/case-studies/">Case Studies</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Company
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="https://ezcatch.co.in/portfolio">Protfolio</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="https://ezcatch.co.in/contact-us/">Contact Us</a></li>
+                                            <li><a class="dropdown-item" href="https://ezcatch.co.in/about-us/">About
+                                                    Us</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
                     </div>
                     <div class="d-flex justify-content-center d-none d-md-inline">
                         <a class="btn btn-primary" href="https://ezcatch.co.in/contact-us/">Contact Us</a>
@@ -285,60 +355,67 @@
             id="form" method="POST">@csrf
             <div class="form-area position-relative">
                 <!-- div 1 -->
-                <div class="multisteps-form__panel js-active" data-animation="slideHorz">
+                <div class="multisteps-form__panel js-active" data-animation="slideHorz" data-id="1">
                     <div class="wizard-forms">
-                        <div class="inner pb-100 clearfix">
+                        <div class="inner clearfix">
                             <div class="form-content pera-content">
-                                <div class="step-inner-content">
+                                <div class="step-inner-content pb-0">
                                     <span class="step-no">Step 1</span>
-                                    <h2 class="pt-2">Tell Us About Your Business</h2>
-                                    <p>Tell us about your company! Share your details, so we can better serve you. We
+                                    <h3 class="pt-2 fw-bold">Tell Us About Your Business</h3>
+                                    <p style="margin-bottom: 15px;">Tell us about your company! Share your details, so
+                                        we can better serve you. We
                                         look forward to working together!
                                     </p>
-                                    <div class="step-box">
+                                    <div class="step-box pt-3">
                                         <div class="row">
-                                            <div class="col-md-12 form-inner-area">
-                                                <label for="full_name">
-                                                    <h3>Full name<span class="required">*</span></h3>
+                                            <div class="col-md-12 form-inner-area mb-3">
+                                                <label for="full_name" class="mb-1">
+                                                    <h5>Full name<span class="required">*</span></h5>
                                                 </label>
                                                 <input type="text" id="full_name" name="full_name"
-                                                    class="form-control" placeholder="Enter Full name">
+                                                    style="height: 45px;" class="form-control mb-0 px-3"
+                                                    placeholder="Enter Full name">
                                             </div>
-                                            <div class="col-md-12 form-inner-area">
-                                                <label for="mail">
-                                                    <h3>Mail<span class="required">*</span></h3>
+                                            <div class="col-md-12 form-inner-area mb-3">
+                                                <label for="mail" class="mb-1">
+                                                    <h5>Mail<span class="required">*</span></h5>
                                                 </label>
                                                 <input type="email" id="mail" name="mail"
-                                                    class="form-control" placeholder="Enter mail">
+                                                    style="height: 45px;" class="form-control mb-0 px-3"
+                                                    placeholder="Enter mail">
                                             </div>
-                                            <div class="col-md-12 form-inner-area">
-                                                <label for="country">
-                                                    <h3>Country<span class="required">*</span></h3>
+                                            <div class="col-md-12 form-inner-area mb-3">
+                                                <label for="country" class="mb-1">
+                                                    <h5>Country<span class="required">*</span></h5>
                                                 </label>
                                                 <input type="text" id="country" name="country"
-                                                    class="form-control" placeholder="Entry Country">
+                                                    style="height: 45px;" class="form-control mb-0 px-3"
+                                                    placeholder="Entry Country">
                                             </div>
-                                            <div class="col-md-12 form-inner-area">
-                                                <label for="phone_number">
-                                                    <h3>
-                                                        Phone Number<span class="required">*</span></h3>
+                                            <div class="col-md-12 form-inner-area mb-3">
+                                                <label for="phone_number" class="mb-1">
+                                                    <h5>
+                                                        Phone Number<span class="required">*</span></h5>
                                                 </label>
                                                 <input type="text" id="phone_number" name="phone_number"
-                                                    class="form-control" placeholder="Write Phone number">
+                                                    style="height: 45px;" class="form-control mb-0 px-3"
+                                                    placeholder="Write Phone number with country code">
                                             </div>
-                                            <div class="col-md-12 form-inner-area">
-                                                <label for="company_name">
-                                                    <h3>Company name<span class="required">*</span></h3>
+                                            <div class="col-md-12 form-inner-area mb-3">
+                                                <label for="company_name" class="mb-1">
+                                                    <h5>Company name<span class="required">*</span></h5>
                                                 </label>
                                                 <input type="text" id="company_name" name="company_name"
-                                                    class="form-control" placeholder="Enter Company name">
+                                                    style="height: 45px;" class="form-control mb-0 px-3"
+                                                    placeholder="Enter Company name">
                                             </div>
-                                            <div class="col-md-12 form-inner-area">
-                                                <label for="website_url">
-                                                    <h3>Website URL</h3>
+                                            <div class="col-md-12 form-inner-area mb-3">
+                                                <label for="website_url" class="mb-1">
+                                                    <h5>Website URL</h5>
                                                 </label>
                                                 <input type="text" id="website_url" name="website_url"
-                                                    class="form-control" placeholder="Enter Website URL">
+                                                    style="height: 45px;" class="form-control mb-0 px-3"
+                                                    placeholder="Enter Website URL">
                                             </div>
                                         </div>
                                     </div>
@@ -348,18 +425,19 @@
                         <!-- /.inner -->
                         <div class="actions">
                             <ul>
-                                <li class="disable" aria-disabled="true"><span class="js-btn-next"
-                                        title="NEXT">Backward <i class="fa fa-arrow-right"></i></span></li>
-                                <li><span class="js-btn-next" title="NEXT">NEXT <i
-                                            class="fa fa-arrow-right"></i></span></li>
+                                {{-- <li class="disable" aria-disabled="true"><span class="js-btn-next py-1" style="width: 150px;height:55px;line-height:50px;"
+                                        title="NEXT">Backward <i class="fa fa-arrow-right"></i></span></li> --}}
+                                <li><span class="py-1 next-btn-1" title="NEXT"
+                                        style="width: 147px;height:53px;line-height:49px;background-color:black;color:white;font-size:20px;">NEXT
+                                        <i class="fa fa-arrow-right"></i></span></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <!-- div 2 -->
-                <div class="multisteps-form__panel" data-animation="slideHorz">
+                <div class="multisteps-form__panel" data-animation="slideHorz" data-id="2">
                     <div class="wizard-forms">
-                        <div class="inner pb-100 clearfix">
+                        <div class="inner clearfix">
                             <div class="form-content pera-content">
                                 <div class="step-inner-content">
                                     <span class="step-no bottom-line">Step 2</span>
@@ -372,8 +450,8 @@
                                         </div>
                                     </div>
 
-                                    <h2>Define Your Vision</h2>
-                                    <p>
+                                    <h3 class="pt-2 fw-bold">Define Your Vision</h3>
+                                    <p style="margin-bottom: 15px;">
                                         Help us bring your project to life! Briefly describe your project goals and
                                         expectations. You can upload any supporting files. Sharing your budget is
                                         optional but helps tailor our proposal. Please provide details to help us
@@ -381,12 +459,13 @@
                                     </p>
 
                                     <div class="row">
-                                        <div class="col-md-12 form-inner-area language-select mb-2">
-                                            <label for="budget">
-                                                <h3>Budget<span class="required">*</span></h3>
+                                        <div class="col-md-12 form-inner-area mb-3">
+                                            <label for="budget" class="mb-1">
+                                                <h5>Budget<span class="required">*</span></h5>
                                             </label>
                                             {{-- <input type="text" id="full_name" name="full_name" class="form-control" placeholder="Enter Full name"> --}}
-                                            <select name="budget" id="budget" class="form-control">
+                                            <select name="budget" id="budget" class="form-control mb-0 px-3"
+                                                style="height: 45px;background-position-y: 9px;">
                                                 <option value="">Select Budget</option>
                                                 <option> Under 1000 &#8364;</option>
                                                 <option> 1000 to 4000 &#8364;</option>
@@ -396,18 +475,20 @@
                                             </select>
                                         </div>
 
-                                        <div class="col-md-12 form-inner-area mb-1">
-                                            <div class="comment-box">
+                                        <div class="col-md-12 form-inner-area mb-3">
+                                            <div class="comment-box pt-0">
                                                 <label for="project_brief">
-                                                    <h3>About Project<span class="required">*</span></h3>
+                                                    <h5>About Project<span class="required">*</span></h5>
                                                 </label>
-                                                <textarea name="project_brief" id="project_brief" class="form-control" rows="5"
+                                                <textarea name="project_brief" id="project_brief" class="form-control mb-0 px-3" rows="5"
                                                     placeholder="Describe your project briefly"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="upload-documents mb-1">
-                                        <label>Upload Documents:</label>
+                                        <label>
+                                            <h5>Upload Documents:</h5>
+                                        </label>
                                         <div class="upload-araa bg-white">
                                             <input type="hidden" value="" name="fileContent"
                                                 id="fileContent">
@@ -419,11 +500,14 @@
                                                 <span>( File accepted: pdf. doc/ docx -
                                                     Max file size : 150kb for demo limit )</span>
                                             </div>
-                                            <div class="upload-option text-center">
-                                                <label for="attach">Upload The Documents</label>
-                                                <input id="attach" style="visibility:hidden;" name="file"
-                                                    type="file" onchange="UploadFile()" id="file">
-                                                <input type="hidden" name="File Url" id="fileUrl">
+                                            <div class="d-flex flex-column">
+                                                <div class="upload-option text-center">
+                                                    <label for="attach">Upload The Documents</label>
+                                                    <input id="attach" style="visibility:hidden;" name="file"
+                                                        type="file" onchange="UploadFile()" id="file">
+                                                    <input type="hidden" name="File Url" id="fileUrl">
+                                                </div>
+                                                <div id="showFileName">Filename</div>
                                             </div>
                                         </div>
                                     </div>
@@ -434,16 +518,16 @@
                         <!-- /.inner -->
                         <div class="actions">
                             <ul>
-                                <li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-left"></i> BACK
-                                    </span></li>
-                                <li><span class="js-btn-next" title="NEXT">NEXT <i
-                                            class="fa fa-arrow-right"></i></span></li>
+                                {{-- <li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-left"></i> BACK
+                                    </span></li> --}}
+                                <li><button class="next-btn-2" style="width: 147px;height:53px;line-height:49px;background-color:black;color:white;font-size:20px;">NEXT <i
+                                            class="fa fa-arrow-right"></i></button></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <!-- div 3 -->
-                <div class="multisteps-form__panel" data-animation="slideHorz">
+                <div class="multisteps-form__panel" data-animation="slideHorz" data-id="3">
                     <div class="wizard-forms">
                         <div class="inner pb-100 clearfix">
                             <div class="form-content pera-content">
@@ -763,6 +847,7 @@
             var file = document.getElementById('attach').files[0];
             reader.onload = function() {
                 document.getElementById('fileContent').value = reader.result;
+                $('#showFileName').html(file.name);
                 document.getElementById('filename').value = file.name;
                 // document.getElementById('wizard').submit();
             }
@@ -770,7 +855,62 @@
         }
 
         $(document).ready(function() {
-            // $('.conditional').conditionize();
+            $('.next-btn-1').on('click', function(e) {
+                e.preventDefault();
+                let form = $('#form');
+                form.validate({
+                    rules: {
+                        'full_name': 'required',
+                        'mail': 'required',
+                        'country': 'required',
+                        'phone_number': 'required',
+                        'company_name': 'required',
+                    },
+                    messages: {
+                        'full_name': 'Full name is required',
+                        'mail': 'Email is required',
+                        'country': ' Country is required',
+                        'phone_number': 'Phone number is required',
+                        'company_name': 'Country is required',
+                    },
+                    errorElement: 'span',
+                    errorLabelContainer: '.errorTxt',
+                    errorPlacement: function(error, element) {
+                        error.appendTo(element.parent("div"));
+                    }
+                });
+                if (form.valid()) {
+                    form.validate().destroy();
+                    $('.multisteps-form__panel').removeClass('js-active');
+                    $('.multisteps-form__panel').filter('[data-id="2"]').addClass('js-active');
+                }
+            });
+
+            $('.next-btn-2').on('click', function(e) {
+                e.preventDefault();
+                let form1 = $('#form');
+                console.log(form1);
+                form1.validate({
+                    rules: {
+                        'budget': 'required',
+                        'project_brief': 'required',
+                    },
+                    messages: {
+                        'budget': 'Budget is required',
+                        'project_brief': 'Project Brief is required',
+                    },
+                    errorElement: 'span',
+                    errorLabelContainer: '.errorTxt',
+                    errorPlacement: function(error, element) {
+                        error.appendTo(element.parent("div"));
+                    }
+                });
+                if (form1.valid()) {
+                    console.log('here sub');
+                    $('.multisteps-form__panel').removeClass('js-active');
+                    $('.multisteps-form__panel').filter('[data-id="3"]').addClass('js-active');
+                }
+            });
 
             $('#form').submit(function(e) {
                 e.preventDefault();
@@ -782,12 +922,10 @@
                         'country': 'required',
                         'phone_number': 'required',
                         'company_name': 'required',
-                        'website_url': 'required',
                         'project_brief': 'required',
                         'date': 'required',
                         'time_zone': 'required',
                         'meeting': 'required',
-                        'file': 'required',
 
                     },
                     messages: {
