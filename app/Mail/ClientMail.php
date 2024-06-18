@@ -19,7 +19,7 @@ class ClientMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct($data,$filePath)
+    public function __construct($data, $filePath)
     {
         $this->data = $data;
         $this->filePath = $filePath;
@@ -28,11 +28,21 @@ class ClientMail extends Mailable
 
     public function build()
     {
-        return $this->from($this->data['mail'], env('APP_NAME'))
-                    ->subject('Thank You for Your Submission!')
-                    ->attach($this->filePath)
-                    ->view('email.client')
-                    ->with('data', $this->data);
+        if (!empty($this->data['filename'])) {
+            return $this->from($this->data['mail'], env('APP_NAME'))
+                ->subject('Thank You for Your Submission!')
+                ->attach($this->filePath)
+                ->view('email.client')
+                ->with('data', $this->data);
+        } else {
+            return $this->from($this->data['mail'], env('APP_NAME'))
+                ->subject('Thank You for Your Submission!')
+                ->view('email.client')
+                ->with('data', $this->data);
+        }
+
+
+
     }
 
 

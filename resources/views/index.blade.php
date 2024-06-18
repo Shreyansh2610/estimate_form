@@ -339,13 +339,13 @@
             </div>
             <div class="steps clearfix">
                 <ul class="tablist multisteps-form__progress">
-                    <li class="multisteps-form__progress-btn js-active current">
+                    <li class="multisteps-form__progress-btn js-active current" data-id="1">
                         <span>1</span>
                     </li>
-                    <li class="multisteps-form__progress-btn">
+                    <li class="multisteps-form__progress-btn" data-id="2">
                         <span>2</span>
                     </li>
-                    <li class="multisteps-form__progress-btn last">
+                    <li class="multisteps-form__progress-btn last" data-id="3">
                         <span>3</span>
                     </li>
                 </ul>
@@ -362,7 +362,7 @@
                                 <div class="step-inner-content pb-0">
                                     <span class="step-no">Step 1</span>
                                     <h3 class="pt-2 fw-bold">Tell Us About Your Business</h3>
-                                    <p style="margin-bottom: 15px;">Tell us about your company! Share your details, so
+                                    <p style="margin-bottom: 18px;">Tell us about your company! Share your details, so
                                         we can better serve you. We
                                         look forward to working together!
                                     </p>
@@ -451,7 +451,7 @@
                                     </div>
 
                                     <h3 class="pt-2 fw-bold">Define Your Vision</h3>
-                                    <p style="margin-bottom: 15px;">
+                                    <p style="margin-bottom: 18px;">
                                         Help us bring your project to life! Briefly describe your project goals and
                                         expectations. You can upload any supporting files. Sharing your budget is
                                         optional but helps tailor our proposal. Please provide details to help us
@@ -529,7 +529,7 @@
                 <!-- div 3 -->
                 <div class="multisteps-form__panel" data-animation="slideHorz" data-id="3">
                     <div class="wizard-forms">
-                        <div class="inner pb-100 clearfix">
+                        <div class="inner clearfix">
                             <div class="form-content pera-content">
                                 <div class="step-inner-content">
                                     <span class="step-no bottom-line">Step 3</span>
@@ -541,14 +541,16 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <h2>Book a Discovery Call</h2>
-                                    <p>Let’s discuss your project! Schedule a call with us by picking a date and time
+                                    <h3 class="pt-2 fw-bold">Book a Discovery Call</h3>
+                                    <p style="margin-bottom: 18px;">Let’s discuss your project! Schedule a call with us by picking a date and time
                                         that suits you. Choose your preferred meeting platform – Zoom or Google Meet.
                                         We’ll match our schedules to your time zone for a seamless conversation. We look
                                         forward to planning with you!</p>
-                                    <div class="language-select form-inner-area">
-                                        <h3 for="time_zone">Time zome<span class="required">*</span></h3>
-                                        <select name="time_zone">
+                                    <div class="language-select form-inner-area  mb-3">
+                                        <label for="time_zone" class="mb-1">
+                                        <h5 for="time_zone">Time zome<span class="required">*</span></h5>
+                                    </label>
+                                        <select name="time_zone" id="time_zone"  class="form-control mb-0 px-3" style="height: 45px;background-position-y: 9px;">
                                             <option value="">Select time zone</option>
                                             <option value='(GMT+00:00) Default (GMT+00:00) Default'>(GMT+00:00) Default
                                                 (GMT+00:00) Default</option>
@@ -764,18 +766,25 @@
 
 
                                     <div class="step-content-field">
-                                        <div class="form-inner-area">
-                                            <h3 for="meeting">Date<span class="required">*</span></h3>
+                                        <div class="form-inner-area mb-3">
+                                            <label for="time_zone" class="mb-1">
+                                            <h5 for="meeting">Date<span class="required">*</span></h5>
+                                            </label>
+                                            <input type="text" name="date" id="date" placeholder="Enter date"  style="height: 45px;"
+                                                class="form-control date datepicker  mb-0 px-3">
                                         </div>
-                                        <div class="date-picker date datepicker">
+                                        {{-- <div class="date-picker date datepicker">
                                             <input type="text" name="date" id="date"
                                                 class="form-control">
-                                            <div class="input-group-append"><span>ADD DATE</span></div>
+                                            <div class="input-group-append d-none"><span>ADD DATE</span></div>
+                                        </div> --}}
+
+                                        <div class="form-inner-area mb-1">
+                                            <label for="meeting" class="mb-1">
+                                            <h5 for="meeting">Meeting<span class="required">*</span></h5>
+                                            </label>
                                         </div>
-                                        <div class="form-inner-area">
-                                            <h3 for="meeting">Meeting<span class="required">*</span></h3>
-                                        </div>
-                                        <div class="plan-area">
+                                        <div class="plan-area pt-0">
                                             <div class="plan-icon-text text-center active">
                                                 <div class="plan-icon">
                                                     {{-- <i class="fas fa-chess-queen"></i> --}}
@@ -814,9 +823,9 @@
                         <!-- ./inner -->
                         <div class="actions">
                             <ul>
-                                <li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-left"></i> BACK
-                                    </span></li>
-                                <li><button type="submit" title="NEXT">SUBMIT <i
+                                {{-- <li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-left"></i> BACK
+                                    </span></li> --}}
+                                <li><button type="submit" title="NEXT" style="width: 147px;height:53px;line-height:49px;font-size:20px;">SUBMIT <i
                                             class="fa fa-arrow-right"></i></button></li>
                                 </li>
                             </ul>
@@ -883,6 +892,9 @@
                     form.validate().destroy();
                     $('.multisteps-form__panel').removeClass('js-active');
                     $('.multisteps-form__panel').filter('[data-id="2"]').addClass('js-active');
+
+                    $('.multisteps-form__progress-btn').filter('[data-id="2"]').addClass('js-active');
+                    $('.multisteps-form__progress-btn').filter('[data-id="2"]').addClass('current');
                 }
             });
 
@@ -906,9 +918,12 @@
                     }
                 });
                 if (form1.valid()) {
-                    console.log('here sub');
+                    form1.validate().destroy();
                     $('.multisteps-form__panel').removeClass('js-active');
                     $('.multisteps-form__panel').filter('[data-id="3"]').addClass('js-active');
+
+                    $('.multisteps-form__progress-btn').filter('[data-id="3"]').addClass('js-active');
+                    $('.multisteps-form__progress-btn').filter('[data-id="3"]').addClass('current');
                 }
             });
 
@@ -922,6 +937,7 @@
                         'country': 'required',
                         'phone_number': 'required',
                         'company_name': 'required',
+                        'budget': 'required',
                         'project_brief': 'required',
                         'date': 'required',
                         'time_zone': 'required',
@@ -930,27 +946,31 @@
                     },
                     messages: {
                         'full_name': 'Full name is required',
-                        'mail': 'Emsil is required',
+                        'mail': 'Email is required',
                         'country': ' Country is required',
                         'phone_number': 'Phone number is required',
                         'company_name': 'Country is required',
-                        'website_url': 'Website URL is required',
+                        'budget': 'Budget is required',
                         'project_brief': 'Project brief is required',
                         'date': 'Date is required',
                         'time_zone': 'Time zone is required',
                         'meeting': 'Meeting is required',
-                        'file': 'File is required',
                     },
                     errorElement: 'span',
                     errorLabelContainer: '.errorTxt',
                     errorPlacement: function(error, element) {
-                        error.appendTo(element.parent("div"));
+                        if(element == 'date') {
+                            error.appendTo(element.parent(".date"));
+                        } else {
+                            error.appendTo(element.parent("div"));
+                        }
+
                     }
                 });
                 if (form.valid()) {
                     Swal.fire({
-                        title: "Loading",
-                        html: "Please while adding file.",
+                        title: "Please wait",
+                        html: "This form is being submitted. This may take a few moments.",
                         timerProgressBar: true,
                         didOpen: () => {
                             Swal.showLoading();
@@ -962,8 +982,8 @@
                         data: form.serialize(),
                         dataType: "JSON",
                         success: function(response) {
-                            Swal.hideLoading();
-                            let fileUrl = response.fileUrl;
+
+                            let fileUrl = response.fileUrl ?? '';
                             $('#fileUrl').val(fileUrl);
                             formSubmit(form);
                         },
@@ -995,24 +1015,17 @@
                     "Time Zone": form.find('#time_zone').val(),
                     "Meeting": form.find('[name="meeting"]:checked').val(),
                 }
-                Swal.fire({
-                    title: "Loading",
-                    html: "Please while data google sheet.",
-                    timerProgressBar: true,
-                    didOpen: () => {
-                        Swal.showLoading();
-                    },
-                })
+                console.log(dataSubmit);
                 $.ajax({
                     type: "POST",
-                    url: "https://script.google.com/macros/s/AKfycbwxJkjreAxmdhSNYfqwuInnFtPI9ofiWTsRO5DXom-Q59FMI86WuiaTUl0UYKasf6-lVQ/exec",
+                    url: "https://script.google.com/macros/s/AKfycbxL7QRnGwkxVBM-C-E3bW4y3vHW5VC6ExJpRIhwwrr7Kx0nND20iBuJ5YKfKO9yN5zp-A/exec",
                     data: dataSubmit,
                     dataType: "JSON",
                     success: function(response) {
                         Swal.hideLoading();
                         Swal.fire({
-                            title: "Data Saved",
-                            text: "Data is saved in google sheet.",
+                            title: "Thank you for your input",
+                            text: "Your form has been submitted successfully!",
                             icon: "success"
                         }).then((result) => {
                             window.location.reload();
@@ -1024,7 +1037,7 @@
                         Swal.fire({
                             icon: "error",
                             title: "Oops...",
-                            text: "Failed to save file"
+                            text: "Failed to save data"
                         });
                     }
                 });

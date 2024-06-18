@@ -35,7 +35,9 @@
                         <div class="h5">Project Information:</div>
                         <hr>
                         <div><b>Project Brief:</b>&nbsp;{{$data['project_brief']}}</div>
+                        @if (!empty($data['filename']))
                         <div><b>Attachment:</b>&nbsp;<a href="{{$data['file_path']}}" target="_blank">File</a></div>
+                        @endif
                         <div><b>Budget:</b>&nbsp;{{$data['budget']}}</div>
                         <br>
                         <br>

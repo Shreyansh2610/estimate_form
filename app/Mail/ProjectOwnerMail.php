@@ -28,10 +28,18 @@ class ProjectOwnerMail extends Mailable
 
     public function build()
     {
-        return $this->from(env('Mail_OWNER'), env('APP_NAME'))
+        if (!empty($this->data['filename'])) {
+            return $this->from(env('Mail_OWNER'), env('APP_NAME'))
                     ->subject('New Inquiry Of Client')
                     ->attach($this->filePath)
                     ->view('email.owner')
                     ->with('data', $this->data);
+        } else {
+            return $this->from(env('Mail_OWNER'), env('APP_NAME'))
+                    ->subject('New Inquiry Of Client')
+                    ->view('email.owner')
+                    ->with('data', $this->data);
+        }
+
     }
 }

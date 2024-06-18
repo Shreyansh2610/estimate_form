@@ -27,12 +27,12 @@ class DataRequestController extends Controller
             'full_name' => 'required',
             'mail' => 'required|email',
             'country' => 'required',
-            'phone_number' => 'required|phone',  // "composer require propaganistas/laravel-phone" package installed
+            'phone_number' => 'required',  // "composer require propaganistas/laravel-phone" package installed
             'company_name' => 'required',
-            'website_url' => 'required',
+            // 'website_url' => 'required',
             'project_brief' => 'required',
-            'fileContent' => 'required',
-            'filename' => 'required',
+            // 'fileContent' => 'required',
+            // 'filename' => 'required',
             'time_zone' => 'required',
             'date' => 'required',
             'meeting' => 'required'
@@ -54,17 +54,17 @@ class DataRequestController extends Controller
             'date' => 'Date',
             'meeting' => 'Meeting platform',
         ]);
-
-        $fileName =str_replace(' ','',Carbon::now()->format('YmdHis').$request->input('filename'));
-
-        $image_parts = explode(";base64,", $request->fileContent);
-        // dd($image_parts);
-        file_put_contents(public_path('img/' . $fileName),base64_decode($image_parts[1]));
+        $fileName =null;
+        if(!empty($request->filename)) {
+            $fileName =str_replace(' ','',Carbon::now()->format('YmdHis').$request->input('filename'));
+            $image_parts = explode(";base64,", $request->fileContent);
+            // dd($image_parts);
+            file_put_contents(public_path('img/' . $fileName),base64_decode($image_parts[1]));
+        }
         $request->filename = $fileName;
-        // dd($request->filename);
         Mail::to($request->input('mail'))->send(new ClientMail($request->all(),public_path('img/' . $fileName)));
         Mail::to(env('Mail_OWNER'))->send(new ProjectOwnerMail($request->all(),public_path('img/' . $fileName)));
 
-        return response()->json(['type'=>'success','message'=>'Form is submitted','fileUrl'=>asset('img/'.$fileName)],200);
+        return response()->json(['type'=>'success','message'=>'Form is submitted','fileUrl'=>!empty($request->filename)?asset('img/'.$fileName):null],200);
     }
 }
