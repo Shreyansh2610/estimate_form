@@ -61,6 +61,30 @@
             background-color: white !important;
             color: black !important;
         }
+        @media (max-width: 992px) {
+            .navbar-collapse {
+                position: absolute;
+                top: 60px; /* Adjust based on your navbar height */
+                left: 0;
+                right: 0;
+                width: 100%;
+            }
+        }
+        .navbar-nav div.dropdown-menu {
+            width: 100vw; /* Full width of viewport */
+            left: 0; /* Align to the left */
+            right: 0; /* Align to the right */
+            max-height: 70vh; /* Maximum height to make it scrollable */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .contact-us {
+            background-color: #273272 !important;
+            color: white !important;
+        }
+        .contact-us:hover {
+            background-color: white !important;
+            color: #273272 !important;
+        }
     </style>
 
 </head>
@@ -240,7 +264,7 @@
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Industries
                                         </a>
-                                        <ul class="dropdown-menu p-5"
+                                        <div class="dropdown-menu p-5"
                                             style="width: 100%;z-index:10000; background-color:white">
                                             <div class="row">
                                                 <div class="col-12 col-md-4 col-sm-6">
@@ -294,7 +318,7 @@
                                                                 class="bi bi-film"></i> Media & Entertainment</a></div>
                                                 </div>
                                             </div>
-                                        </ul>
+                                        </div>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button"
@@ -325,7 +349,7 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-center d-none d-md-inline">
-                        <a class="btn btn-primary" href="https://ezcatch.co.in/contact-us/">Contact Us</a>
+                        <a class="btn btn-primary contact-us" href="https://ezcatch.co.in/contact-us/">Contact Us</a>
                     </div>
                 </div>
             </nav>
