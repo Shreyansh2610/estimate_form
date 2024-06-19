@@ -59,12 +59,12 @@ class DataRequestController extends Controller
             $fileName =str_replace(' ','',Carbon::now()->format('YmdHis').$request->input('filename'));
             $image_parts = explode(";base64,", $request->fileContent);
             // dd($image_parts);
-            file_put_contents(public_path('img/' . $fileName),base64_decode($image_parts[1]));
+            file_put_contents(public_path('uploaded_files/' . $fileName),base64_decode($image_parts[1]));
         }
         $request->filename = $fileName;
-        Mail::to($request->input('mail'))->send(new ClientMail($request->all(),public_path('img/' . $fileName)));
-        Mail::to(env('Mail_OWNER'))->send(new ProjectOwnerMail($request->all(),public_path('img/' . $fileName)));
+        Mail::to($request->input('mail'))->send(new ClientMail($request->all(),public_path('uploaded_files/' . $fileName)));
+        Mail::to(env('Mail_OWNER'))->send(new ProjectOwnerMail($request->all(),public_path('uploaded_files/' . $fileName)));
 
-        return response()->json(['type'=>'success','message'=>'Form is submitted','fileUrl'=>!empty($request->filename)?asset('img/'.$fileName):null],200);
+        return response()->json(['type'=>'success','message'=>'Form is submitted','fileUrl'=>!empty($request->filename)?asset('uploaded_files/'.$fileName):null],200);
     }
 }
