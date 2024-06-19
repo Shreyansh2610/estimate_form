@@ -96,11 +96,12 @@
             color: #273272 !important;
         }
 
-        @media(max-width:1198px) {
-            .form-field-start {
-                top: 220px;
-            }
+        ul.dropdown-menu li a.dropdown-item:hover {
+            background-color: #273272 !important;
+            color: white !important;
         }
+
+
     </style>
 
 </head>
@@ -172,10 +173,12 @@
                             <span>
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color:#273272;">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        <a class="nav-link active" aria-current="page" href="#"
+                                            style="font-weight: 600;text-transform: uppercase;font-size:14px;">Home</a>
                                     </li>
                                     <li class="nav-item dropdown" style="position: initial;">
                                         <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            style="font-weight: 600;text-transform: uppercase;font-size:14px;"
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Services
                                         </a>
@@ -276,8 +279,9 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="nav-item dropdown" style="position: initial;">
+                                    <li class="nav-item dropdown " style="position: initial;">
                                         <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            style="font-weight: 600;text-transform: uppercase;font-size:14px;"
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Industries
                                         </a>
@@ -305,7 +309,7 @@
                                                 <div class="col-12 col-md-4 col-sm-6">
                                                     <div class="mb-3"><a
                                                             href="https://ezcatch.co.in/wp/real-estate-development-service/"><i
-                                                                class="bi bi-home"></i> Real Estate</a></div>
+                                                                class="bi bi-house-door"></i> Real Estate</a></div>
                                                     <div class="mb-3"><a
                                                             href="https://ezcatch.co.in/wp/fitness-wellness-service-company/"><i
                                                                 class="bi bi-person-walking"></i> Fitness &
@@ -339,6 +343,7 @@
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            style="font-weight: 600;text-transform: uppercase;font-size:14px;"
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Resources
                                         </a>
@@ -349,6 +354,7 @@
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            style="font-weight: 600;text-transform: uppercase;font-size:14px;"
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Company
                                         </a>
@@ -375,12 +381,13 @@
     <div class="clearfix"></div>
     <div class="wrapper">
         <div class="row">
-            <div class="col-12 col-lg-3" style="background-image: url('{{asset('assets/img/side-img.jpg')}}');">
+            <div class="col-12 col-lg-3" style="background-image: url('{{ asset('assets/img/side-img.jpg') }}');">
                 <div class="steps-area steps-area-fixed h-100">
                     <div class="image-holder">
                         {{-- <img src="/assets/img/side-img.jpg" alt="" style=""> --}}
                     </div>
-                    <div class="steps clearfix" style="top:200px;z-index:10000;position:relative;opacity:1;float:right;right:15%;">
+                    <div class="steps clearfix"
+                        style="z-index:10000;position:relative;opacity:1;float:right;right:15%;">
                         <ul class="tablist multisteps-form__progress">
                             <li class="multisteps-form__progress-btn js-active current" data-id="1">
                                 <span>1</span>
@@ -963,53 +970,57 @@
                 </form>
             </div>
         </div>
+    </div>
+    <section>
         <div class="row">
             <div class="col-12">
                 <footer style="background-color:rgb(36, 36, 36);color:white">
                     <div class="row">
                         <div class="col-12 col-md-6 col-xl-3 p-2">
                             <div class="m-5">
-                            <img src="https://ezcatch.co.in/wp-content/uploads/2024/05/ez-logo.png" alt=""
-                                style="width: 100%;height:100%;z-index:10000;">
+                                <img src="https://ezcatch.co.in/wp-content/uploads/2024/05/ez-logo.png" alt=""
+                                    style="width: 100%;height:100%;z-index:10000;">
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-xl-3 p-2">
                             <div class="m-5">
-                            <h5 class="">United Kingdom Address</h5>
-                            <p>
-                                307, Green Lane, Seven Kings, IG39TL, United Kingdom
-                            </p>
-                            <h5 class="mt-3">India Address</h5>
-                            <p>
-                                23 Tulsi Villa Society, Near ambisan modan school, Laskana Surat, Gujarat India 394185
-                            </p>
+                                <h5 class="">United Kingdom Address</h5>
+                                <p>
+                                    307, Green Lane, Seven Kings, IG39TL, United Kingdom
+                                </p>
+                                <h5 class="mt-3">India Address</h5>
+                                <p>
+                                    23 Tulsi Villa Society, Near ambisan modan school, Laskana Surat, Gujarat India
+                                    394185
+                                </p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-xl-3 p-2">
                             <div class="m-5">
-                            <h5 class="">Email:</h5>
-                            <p>
-                                drs@ezcatch.co.in
-                            </p>
-                            <h5 class="mt-3">Mobile number</h5>
-                            <p>
-                                +44 7423 506520
-                            </p>
-                        </div>
+                                <h5 class="">Email:</h5>
+                                <p>
+                                    drs@ezcatch.co.in
+                                </p>
+                                <h5 class="mt-3">Mobile number</h5>
+                                <p>
+                                    +44 7423 506520
+                                </p>
+                            </div>
                         </div>
                         <div class="col-12 col-md-6 col-xl-3 p-2">
                             <div class="m-5 d-flex justify-content-center justify-content-sm-start flex-column">
                                 <div class="mx-1 mb-1" id="facebook">
                                     <a href="https://www.facebook.com/people/Ezcatch-Pvt-Ltd/61560141517826/"
-                                        aria-label="Facebook" class="facebook"><i class="bi bi-facebook"></i> Facebook</a>
+                                        aria-label="Facebook" class="facebook"><i class="bi bi-facebook"></i>
+                                        Facebook</a>
                                 </div>
                                 <div class="m-1" id="twitter-x">
                                     <a href="https://x.com/EzcatchLtd" aria-label="Twitter" class="twitter"><i
                                             class="bi bi-twitter-x"></i> Twitter X</a>
                                 </div>
                                 <div class="m-1" id="youtube">
-                                    <a href="https://www.youtube.com/@ezcatchltd" aria-label="Youtube" class="youtube"><i
-                                            class="bi bi-youtube"></i> Youtube</a>
+                                    <a href="https://www.youtube.com/@ezcatchltd" aria-label="Youtube"
+                                        class="youtube"><i class="bi bi-youtube"></i> Youtube</a>
                                 </div>
                                 <div class="m-1" id="linkedin">
                                     <a href="https://www.linkedin.com/company/ezcatch-ltd/" aria-label="LinkedIn"
@@ -1020,8 +1031,8 @@
                                         class="instagram"><i class="bi bi-instagram"></i> Instagram</a>
                                 </div>
                                 <div class="mx-1 mt-1" id="pinterest">
-                                    <a href="https://www.pinterest.com/drs0408/" aria-label="pinterest" class="pinterest"><i
-                                            class="bi bi-pinterest"></i> Pinterest</a>
+                                    <a href="https://www.pinterest.com/drs0408/" aria-label="pinterest"
+                                        class="pinterest"><i class="bi bi-pinterest"></i> Pinterest</a>
                                 </div>
                             </div>
                         </div>
@@ -1029,215 +1040,216 @@
                 </footer>
             </div>
         </div>
-        {{-- <section>@include('footer')</section> --}}
+    </section>
+    {{-- <section>@include('footer')</section> --}}
 
-        <script src="{{ asset('assets/js/jquery-3.3.1.min.js') }}"></script>
-        <script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-        <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-        <script src="{{ asset('assets/js/conditionize.flexible.jquery.min.js') }}"></script>
-        <script src="{{ asset('assets/js/main.js') }}"></script>
-        <script src="{{ asset('assets/js/switch.js') }}"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script>
-            $("#files").change(function() {
-                filename = this.files[0].name
-                // console.log(filename);
+    <script src="{{ asset('assets/js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/conditionize.flexible.jquery.min.js') }}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
+    <script src="{{ asset('assets/js/switch.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $("#files").change(function() {
+            filename = this.files[0].name
+            // console.log(filename);
+        });
+
+        function UploadFile() {
+            var reader = new FileReader();
+            var file = document.getElementById('attach').files[0];
+            reader.onload = function() {
+                document.getElementById('fileContent').value = reader.result;
+                $('#showFileName').html(file.name);
+                document.getElementById('filename').value = file.name;
+                // document.getElementById('wizard').submit();
+            }
+            reader.readAsDataURL(file);
+        }
+
+        $(document).ready(function() {
+            $('.next-btn-1').on('click', function(e) {
+                e.preventDefault();
+                let form = $('#form');
+                form.validate({
+                    rules: {
+                        'full_name': 'required',
+                        'mail': 'required',
+                        'country': 'required',
+                        'phone_number': 'required',
+                        'company_name': 'required',
+                    },
+                    messages: {
+                        'full_name': 'Full name is required',
+                        'mail': 'Email is required',
+                        'country': ' Country is required',
+                        'phone_number': 'Phone number is required',
+                        'company_name': 'Country is required',
+                    },
+                    errorElement: 'span',
+                    errorLabelContainer: '.errorTxt',
+                    errorPlacement: function(error, element) {
+                        error.appendTo(element.parent("div"));
+                    }
+                });
+                if (form.valid()) {
+                    form.validate().destroy();
+                    $('.multisteps-form__panel').removeClass('js-active');
+                    $('.multisteps-form__panel').filter('[data-id="2"]').addClass('js-active');
+
+                    $('.multisteps-form__progress-btn').filter('[data-id="2"]').addClass('js-active');
+                    $('.multisteps-form__progress-btn').filter('[data-id="2"]').addClass('current');
+                }
             });
 
-            function UploadFile() {
-                var reader = new FileReader();
-                var file = document.getElementById('attach').files[0];
-                reader.onload = function() {
-                    document.getElementById('fileContent').value = reader.result;
-                    $('#showFileName').html(file.name);
-                    document.getElementById('filename').value = file.name;
-                    // document.getElementById('wizard').submit();
+            $('.next-btn-2').on('click', function(e) {
+                e.preventDefault();
+                let form1 = $('#form');
+                console.log(form1);
+                form1.validate({
+                    rules: {
+                        'budget': 'required',
+                        'project_brief': 'required',
+                    },
+                    messages: {
+                        'budget': 'Budget is required',
+                        'project_brief': 'Project Brief is required',
+                    },
+                    errorElement: 'span',
+                    errorLabelContainer: '.errorTxt',
+                    errorPlacement: function(error, element) {
+                        error.appendTo(element.parent("div"));
+                    }
+                });
+                if (form1.valid()) {
+                    form1.validate().destroy();
+                    $('.multisteps-form__panel').removeClass('js-active');
+                    $('.multisteps-form__panel').filter('[data-id="3"]').addClass('js-active');
+
+                    $('.multisteps-form__progress-btn').filter('[data-id="3"]').addClass('js-active');
+                    $('.multisteps-form__progress-btn').filter('[data-id="3"]').addClass('current');
                 }
-                reader.readAsDataURL(file);
-            }
+            });
 
-            $(document).ready(function() {
-                $('.next-btn-1').on('click', function(e) {
-                    e.preventDefault();
-                    let form = $('#form');
-                    form.validate({
-                        rules: {
-                            'full_name': 'required',
-                            'mail': 'required',
-                            'country': 'required',
-                            'phone_number': 'required',
-                            'company_name': 'required',
-                        },
-                        messages: {
-                            'full_name': 'Full name is required',
-                            'mail': 'Email is required',
-                            'country': ' Country is required',
-                            'phone_number': 'Phone number is required',
-                            'company_name': 'Country is required',
-                        },
-                        errorElement: 'span',
-                        errorLabelContainer: '.errorTxt',
-                        errorPlacement: function(error, element) {
+            $('#form').submit(function(e) {
+                e.preventDefault();
+                let form = $(this);
+                form.validate({
+                    rules: {
+                        'full_name': 'required',
+                        'mail': 'required',
+                        'country': 'required',
+                        'phone_number': 'required',
+                        'company_name': 'required',
+                        'budget': 'required',
+                        'project_brief': 'required',
+                        'date': 'required',
+                        'time_zone': 'required',
+                        'meeting': 'required',
+
+                    },
+                    messages: {
+                        'full_name': 'Full name is required',
+                        'mail': 'Email is required',
+                        'country': ' Country is required',
+                        'phone_number': 'Phone number is required',
+                        'company_name': 'Country is required',
+                        'budget': 'Budget is required',
+                        'project_brief': 'Project brief is required',
+                        'date': 'Date is required',
+                        'time_zone': 'Time zone is required',
+                        'meeting': 'Meeting is required',
+                    },
+                    errorElement: 'span',
+                    errorLabelContainer: '.errorTxt',
+                    errorPlacement: function(error, element) {
+                        if (element == 'date') {
+                            error.appendTo(element.parent(".date"));
+                        } else {
                             error.appendTo(element.parent("div"));
                         }
-                    });
-                    if (form.valid()) {
-                        form.validate().destroy();
-                        $('.multisteps-form__panel').removeClass('js-active');
-                        $('.multisteps-form__panel').filter('[data-id="2"]').addClass('js-active');
 
-                        $('.multisteps-form__progress-btn').filter('[data-id="2"]').addClass('js-active');
-                        $('.multisteps-form__progress-btn').filter('[data-id="2"]').addClass('current');
                     }
                 });
-
-                $('.next-btn-2').on('click', function(e) {
-                    e.preventDefault();
-                    let form1 = $('#form');
-                    console.log(form1);
-                    form1.validate({
-                        rules: {
-                            'budget': 'required',
-                            'project_brief': 'required',
+                if (form.valid()) {
+                    Swal.fire({
+                        title: "Please wait",
+                        html: "This form is being submitted. This may take a few moments.",
+                        timerProgressBar: true,
+                        didOpen: () => {
+                            Swal.showLoading();
                         },
-                        messages: {
-                            'budget': 'Budget is required',
-                            'project_brief': 'Project Brief is required',
-                        },
-                        errorElement: 'span',
-                        errorLabelContainer: '.errorTxt',
-                        errorPlacement: function(error, element) {
-                            error.appendTo(element.parent("div"));
-                        }
-                    });
-                    if (form1.valid()) {
-                        form1.validate().destroy();
-                        $('.multisteps-form__panel').removeClass('js-active');
-                        $('.multisteps-form__panel').filter('[data-id="3"]').addClass('js-active');
-
-                        $('.multisteps-form__progress-btn').filter('[data-id="3"]').addClass('js-active');
-                        $('.multisteps-form__progress-btn').filter('[data-id="3"]').addClass('current');
-                    }
-                });
-
-                $('#form').submit(function(e) {
-                    e.preventDefault();
-                    let form = $(this);
-                    form.validate({
-                        rules: {
-                            'full_name': 'required',
-                            'mail': 'required',
-                            'country': 'required',
-                            'phone_number': 'required',
-                            'company_name': 'required',
-                            'budget': 'required',
-                            'project_brief': 'required',
-                            'date': 'required',
-                            'time_zone': 'required',
-                            'meeting': 'required',
-
-                        },
-                        messages: {
-                            'full_name': 'Full name is required',
-                            'mail': 'Email is required',
-                            'country': ' Country is required',
-                            'phone_number': 'Phone number is required',
-                            'company_name': 'Country is required',
-                            'budget': 'Budget is required',
-                            'project_brief': 'Project brief is required',
-                            'date': 'Date is required',
-                            'time_zone': 'Time zone is required',
-                            'meeting': 'Meeting is required',
-                        },
-                        errorElement: 'span',
-                        errorLabelContainer: '.errorTxt',
-                        errorPlacement: function(error, element) {
-                            if (element == 'date') {
-                                error.appendTo(element.parent(".date"));
-                            } else {
-                                error.appendTo(element.parent("div"));
-                            }
-
-                        }
-                    });
-                    if (form.valid()) {
-                        Swal.fire({
-                            title: "Please wait",
-                            html: "This form is being submitted. This may take a few moments.",
-                            timerProgressBar: true,
-                            didOpen: () => {
-                                Swal.showLoading();
-                            },
-                        })
-                        $.ajax({
-                            type: "POST",
-                            url: form.data('action'),
-                            data: form.serialize(),
-                            dataType: "JSON",
-                            success: function(response) {
-
-                                let fileUrl = response.fileUrl ?? '';
-                                $('#fileUrl').val(fileUrl);
-                                formSubmit(form);
-                            },
-                            error: function(response) {
-                                console.log('failed to save file and sending mail');
-                                Swal.hideLoading();
-                                Swal.fire({
-                                    icon: "error",
-                                    title: "Oops...",
-                                    text: "Failed to save file"
-                                });
-                            }
-                        });
-                    }
-                });
-
-                function formSubmit(form) {
-                    let dataSubmit = {
-                        "Full Name": form.find('#full_name').val(),
-                        "Email": form.find('#mail').val(),
-                        "Country": form.find('#country').val(),
-                        "Phone Number": form.find('#phone_number').val(),
-                        "Company Name": form.find('#company_name').val(),
-                        "Website Url": form.find('#website_url').val(),
-                        "Budget": form.find('#budget').val(),
-                        "Project Brief": form.find('#project_brief').val(),
-                        "File": form.find('#fileUrl').val(),
-                        "Date": form.find('#date').val(),
-                        "Time Zone": form.find('#time_zone').val(),
-                        "Meeting": form.find('[name="meeting"]:checked').val(),
-                    }
-                    console.log(dataSubmit);
+                    })
                     $.ajax({
                         type: "POST",
-                        url: "https://script.google.com/macros/s/AKfycbxL7QRnGwkxVBM-C-E3bW4y3vHW5VC6ExJpRIhwwrr7Kx0nND20iBuJ5YKfKO9yN5zp-A/exec",
-                        data: dataSubmit,
+                        url: form.data('action'),
+                        data: form.serialize(),
                         dataType: "JSON",
                         success: function(response) {
-                            Swal.hideLoading();
-                            Swal.fire({
-                                title: "Thank you for your input",
-                                text: "Your form has been submitted successfully!",
-                                icon: "success"
-                            }).then((result) => {
-                                window.location.reload();
-                            });
+
+                            let fileUrl = response.fileUrl ?? '';
+                            $('#fileUrl').val(fileUrl);
+                            formSubmit(form);
                         },
                         error: function(response) {
-                            console.log('failed to enter data into sheet');
+                            console.log('failed to save file and sending mail');
                             Swal.hideLoading();
                             Swal.fire({
                                 icon: "error",
                                 title: "Oops...",
-                                text: "Failed to save data"
+                                text: "Failed to save file"
                             });
                         }
                     });
                 }
             });
-        </script>
+
+            function formSubmit(form) {
+                let dataSubmit = {
+                    "Full Name": form.find('#full_name').val(),
+                    "Email": form.find('#mail').val(),
+                    "Country": form.find('#country').val(),
+                    "Phone Number": form.find('#phone_number').val(),
+                    "Company Name": form.find('#company_name').val(),
+                    "Website Url": form.find('#website_url').val(),
+                    "Budget": form.find('#budget').val(),
+                    "Project Brief": form.find('#project_brief').val(),
+                    "File": form.find('#fileUrl').val(),
+                    "Date": form.find('#date').val(),
+                    "Time Zone": form.find('#time_zone').val(),
+                    "Meeting": form.find('[name="meeting"]:checked').val(),
+                }
+                console.log(dataSubmit);
+                $.ajax({
+                    type: "POST",
+                    url: "https://script.google.com/macros/s/AKfycbxL7QRnGwkxVBM-C-E3bW4y3vHW5VC6ExJpRIhwwrr7Kx0nND20iBuJ5YKfKO9yN5zp-A/exec",
+                    data: dataSubmit,
+                    dataType: "JSON",
+                    success: function(response) {
+                        Swal.hideLoading();
+                        Swal.fire({
+                            title: "Thank you for your input",
+                            text: "Your form has been submitted successfully!",
+                            icon: "success"
+                        }).then((result) => {
+                            window.location.reload();
+                        });
+                    },
+                    error: function(response) {
+                        console.log('failed to enter data into sheet');
+                        Swal.hideLoading();
+                        Swal.fire({
+                            icon: "error",
+                            title: "Oops...",
+                            text: "Failed to save data"
+                        });
+                    }
+                });
+            }
+        });
+    </script>
 
 </body>
 
