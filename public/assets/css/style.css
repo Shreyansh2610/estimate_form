@@ -1683,3 +1683,10 @@ span.error,
   overflow-y: auto;
   /* Enable vertical scrolling */
 }
+
+.upload-documents .upload-text {
+    float: left;
+    margin-top: 8px;
+    max-width: 100%;
+    display: inline-block;
+}

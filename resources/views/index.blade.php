@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/colors/switch.css">
     <!-- Color Alternatives -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> --}}
     {{-- <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" /> --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -322,7 +322,7 @@
             <div class="col-12 col-lg-8 fomr-area">
 
                 <form class="multisteps-form__form form-field-start mb-6" action="javascript:;"
-                    data-action="{{ route('formRequestSubmit') }}" id="form" method="POST">
+                    data-action="{{ route('formRequestSubmit') }}" id="form" method="POST">@csrf
                     <div class="form-area position-relative">
                         <!-- div 1 -->
                         <div class="multisteps-form__panel mb-3 js-active" data-animation="slideHorz" data-id="1">
@@ -468,23 +468,35 @@
                                                 <input type="hidden" value="" name="fileContent"
                                                     id="fileContent">
                                                 <input type="hidden" value="" name="filename" id="filename">
-                                                <div class="upload-icon float-end">
-                                                    <i class="fas fa-cloud-upload-alt"></i>
-                                                </div>
-                                                <div class="upload-text">
-                                                    <span>( File accepted: pdf. doc/ docx -
-                                                        Max file size : 150kb for demo limit )</span>
-                                                </div>
-                                                <div class="d-flex flex-column">
-                                                    <div class="upload-option text-center">
-                                                        <label for="attach">Upload The Documents</label>
-                                                        <input id="attach" style="visibility:hidden;"
-                                                            name="file" type="file" onchange="UploadFile()"
-                                                            id="file">
-                                                        <input type="hidden" name="File Url" id="fileUrl">
+                                                <div class="row">
+
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="d-flex flex-column">
+                                                            <div class="upload-option text-center">
+                                                                <label for="attach">Upload The Documents</label>
+                                                                <input id="attach" style="visibility:hidden;"
+                                                                    name="file" type="file" onchange="UploadFile()"
+                                                                    id="file">
+                                                                <input type="hidden" name="File Url" id="fileUrl">
+                                                            </div>
+                                                            <div id="showFileName">Filename</div>
+                                                        </div>
                                                     </div>
-                                                    <div id="showFileName">Filename</div>
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="upload-icon float-end me-0">
+                                                            <i class="fas fa-cloud-upload-alt"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="upload-text w-100">
+                                                            <span>( File accepted: pdf. doc/ docx img(jpg & png) -
+                                                                Max file size: 2MB)</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
+
+
+
                                             </div>
                                         </div>
                                         <div class="my-4">
@@ -504,7 +516,7 @@
                     <div class="multisteps-form__panel mb-3" data-animation="slideHorz" data-id="3">
                         <div class="wizard-forms">
                             <div class="inner clearfix">
-                                <div class="form-content pera-content">
+                                <div class="form-content pera-content pt-2">
                                     <div class="step-inner-content">
                                         <span class="step-no bottom-line">Step 3</span>
                                         <div class="step-progress float-end">
@@ -792,7 +804,7 @@
                                         <div class="step-content-field">
                                             <div class="form-inner-area mb-3">
                                                 <label for="time_zone" class="mb-1">
-                                                    <h5 for="meeting">Date<span class="required">*</span></h5>
+                                                    <h5 for="date">Date<span class="required">*</span></h5>
                                                 </label>
                                                 <input type="text" name="date" id="date"
                                                     placeholder="Enter date" style="height: 45px;"
@@ -815,8 +827,8 @@
                                                     </div>
                                                     <div class="plan-text">
                                                         <h3>Zoom</h3>
-                                                        <p>Zoom is a proprietary videotelephony software that free plan allows up to 100
-                                                            concurrent participants, with a 40-minute time restriction.
+                                                        <p class="mb-0">Zoom is a proprietary videotelephony software that free plan allows upto 100
+                                                            participants, with a 40-minute time restriction.
                                                         </p>
                                                         <input type="radio" name="meeting" id="meeting"
                                                             value="Zoom meeting" checked="">
@@ -831,7 +843,7 @@
                                                     </div>
                                                     <div class="plan-text">
                                                         <h3>Google Meet</h3>
-                                                        <p>Google Meet is a video communication service developed by
+                                                        <p class="mb-0">Google Meet is a video communication service developed by
                                                             Google.
                                                         </p>
                                                         <input type="radio" name="meeting" id="meeting"
