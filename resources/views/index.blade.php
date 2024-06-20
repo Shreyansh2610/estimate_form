@@ -12,97 +12,26 @@
     <link rel="stylesheet" href="{{ asset('assets/css/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/fontawesome-all.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/footer.css')}}">
 
     <link rel="stylesheet" type="text/css" href="assets/css/colors/switch.css">
     <!-- Color Alternatives -->
-    <link href="{{ asset('assets/css/colors/color-2.css') }}" rel="alternate stylesheet" type="text/css"
+    {{-- <link href="{{ asset('assets/css/colors/color-2.css') }}" rel="alternate stylesheet" type="text/css"
         title="color-2">
     <link href="{{ asset('assets/css/colors/color-3.css') }}" rel="alternate stylesheet" type="text/css"
         title="color-3">
     <link href="{{ asset('assets/css/colors/color-4.css') }}" rel="alternate stylesheet" type="text/css"
         title="color-4">
     <link href="{{ asset('assets/css/colors/color-5.css') }}" rel="alternate stylesheet" type="text/css"
-        title="color-5">
+        title="color-5"> --}}
+    <link href="{{ asset('assets/custom/style.css') }}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     {{-- <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" /> --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <style>
-        /* // <uniquifier>: Use a unique and descriptive class name
-        // <weight>: Use a value from 100 to 900 */
-        .fa,
-        .fas {
-            font-family: 'Font Awesome 5 Free' !important;
-        }
-
-        * {
-            font-family: "Exo", sans-serif !important;
-            font-optical-sizing: auto !important;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        span.error,
-        .required {
-            color: red;
-        }
-
-        .next-btn {
-            width: 150px !important;
-            height: 55px !important;
-            line-height: 50px !important;
-            background-color: black !important;
-            color: white !important;
-        }
-
-        .next-btn:hover {
-            background-color: white !important;
-            color: black !important;
-        }
-
-        @media (max-width: 992px) {
-            .navbar-collapse {
-                position: absolute;
-                top: 60px;
-                /* Adjust based on your navbar height */
-                left: 0;
-                right: 0;
-                width: 100%;
-            }
-        }
-
-        .navbar-nav div.dropdown-menu {
-            width: 100vw;
-            /* Full width of viewport */
-            left: 0;
-            /* Align to the left */
-            right: 0;
-            /* Align to the right */
-            max-height: 70vh;
-            /* Maximum height to make it scrollable */
-            overflow-y: auto;
-            /* Enable vertical scrolling */
-        }
-
-        .contact-us {
-            background-color: #273272 !important;
-            color: white !important;
-        }
-
-        .contact-us:hover {
-            background-color: white !important;
-            color: #273272 !important;
-        }
-
-        ul.dropdown-menu li a.dropdown-item:hover {
-            background-color: #273272 !important;
-            color: white !important;
-        }
-
-
-    </style>
 
 </head>
 
@@ -110,13 +39,12 @@
 
     {{-- <section>@include('header')</section> --}}
 
-    <header class="position-fixed w-100"
-        style="z-index: 10000;background-color: white;font-size: 16px;font-weight: 600;">
-        <div class="py-2" style="background-color: #273272;color:white">
+    <header class="position-fixed w-100">
+        <div class="py-3 top-header">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-6">
-                        <div class="d-flex justify-content-center justify-content-sm-start flex-column flex-sm-row">
+                        <div class="d-flex justify-content-center justify-content-sm-start  flex-sm-row">
                             <span
                                 class="d-flex justify-content-center justify-content-sm-start align-content-center me-sm-3"><i
                                     class="fa fa-phone me-1" style="line-height: 1.5" aria-hidden="true"></i> +(44) 7423
@@ -128,27 +56,27 @@
                     </div>
                     <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center justify-content-sm-end flex-row">
-                            <span class="me-3" id="facebook">
+                            <span class="me-4" id="facebook">
                                 <a href="https://www.facebook.com/people/Ezcatch-Pvt-Ltd/61560141517826/"
                                     aria-label="Facebook" class="facebook"><i class="bi bi-facebook"></i></a>
                             </span>
-                            <span class="me-3" id="twitter-x">
+                            <span class="me-4" id="twitter-x">
                                 <a href="https://x.com/EzcatchLtd" aria-label="Twitter" class="twitter"><i
                                         class="bi bi-twitter-x"></i></a>
                             </span>
-                            <span class="me-3" id="youtube">
+                            <span class="me-4" id="youtube">
                                 <a href="https://www.youtube.com/@ezcatchltd" aria-label="Youtube" class="youtube"><i
                                         class="bi bi-youtube"></i></a>
                             </span>
-                            <span class="me-3" id="linkedin">
+                            <span class="me-4" id="linkedin">
                                 <a href="https://www.linkedin.com/company/ezcatch-ltd/" aria-label="LinkedIn"
                                     class="linkedin"><i class="bi bi-linkedin"></i></a>
                             </span>
-                            <span class="me-3" id="instagram">
+                            <span class="me-4" id="instagram">
                                 <a href="https://www.instagram.com/ezcatchltd/" aria-label="Instagram"
                                     class="instagram"><i class="bi bi-instagram"></i></a>
                             </span>
-                            <span class="me-3" id="pinterest">
+                            <span class="me-4" id="pinterest">
                                 <a href="https://www.pinterest.com/drs0408/" aria-label="pinterest" class="pinterest"><i
                                         class="bi bi-pinterest"></i></a>
                             </span>
@@ -158,9 +86,9 @@
             </div>
         </div>
         <div class="container">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 60px;">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 80px;">
                 <div class="container-fluid px-0 d-flex justify-content-between">
-                    <img width="150" height="50"
+                    <img width="220" height="70"
                         src="https://ezcatch.co.in/wp-content/uploads/2024/05/ez-logo.png" alt="">
                     <div class="d-grid justify-content-end justify-content-lg-center">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -173,12 +101,12 @@
                             <span>
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color:#273272;">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#"
-                                            style="font-weight: 600;text-transform: uppercase;font-size:14px;">Home</a>
+                                        <a class="nav-link active" aria-current="page" href="https://ezcatch.co.in/"
+                                            >Home</a>
                                     </li>
                                     <li class="nav-item dropdown" style="position: initial;">
                                         <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            style="font-weight: 600;text-transform: uppercase;font-size:14px;"
+
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Services
                                         </a>
@@ -281,7 +209,7 @@
                                     </li>
                                     <li class="nav-item dropdown " style="position: initial;">
                                         <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            style="font-weight: 600;text-transform: uppercase;font-size:14px;"
+
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Industries
                                         </a>
@@ -343,7 +271,7 @@
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            style="font-weight: 600;text-transform: uppercase;font-size:14px;"
+
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Resources
                                         </a>
@@ -354,13 +282,13 @@
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            style="font-weight: 600;text-transform: uppercase;font-size:14px;"
+
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Company
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item"
-                                                    href="https://ezcatch.co.in/portfolio">Protfolio</a></li>
+                                                    href="https://ezcatch.co.in/portfolio">Portfolio</a></li>
                                             <li><a class="dropdown-item"
                                                     href="https://ezcatch.co.in/contact-us/">Contact Us</a></li>
                                             <li><a class="dropdown-item" href="https://ezcatch.co.in/about-us/">About
@@ -379,7 +307,7 @@
         </div>
     </header>
     <div class="clearfix"></div>
-    <div class="wrapper">
+    <div class="wrapper"> {{-- padding: 100px 0;  --}}
         <div class="row">
             <div class="col-12 col-lg-3" style="background-image: url('{{ asset('assets/img/side-img.jpg') }}');">
                 <div class="steps-area steps-area-fixed h-100">
@@ -971,77 +899,91 @@
             </div>
         </div>
     </div>
-    <section>
-        <div class="row">
-            <div class="col-12">
-                <footer style="background-color:rgb(36, 36, 36);color:white">
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-xl-3 p-2">
-                            <div class="m-5">
-                                <img src="https://ezcatch.co.in/wp-content/uploads/2024/05/ez-logo.png" alt=""
-                                    style="width: 100%;height:100%;z-index:10000;">
+    <footer class="footer-section pt-3">
+        <div class="container">
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="https://ezcatch.co.in/"><img src="assets/img/ezcatch.png" class="img-fluid" alt="logo"></a>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-3 p-2">
-                            <div class="m-5">
-                                <h5 class="">United Kingdom Address</h5>
-                                <p>
-                                    307, Green Lane, Seven Kings, IG39TL, United Kingdom
-                                </p>
-                                <h5 class="mt-3">India Address</h5>
-                                <p>
-                                    23 Tulsi Villa Society, Near ambisan modan school, Laskana Surat, Gujarat India
-                                    394185
-                                </p>
+                            <div class="footer-text col1">
+                                <p>Ezcatch delivers affordable, high-quality IT solutions to streamline processes and boost productivity</p>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-3 p-2">
-                            <div class="m-5">
-                                <h5 class="">Email:</h5>
-                                <p>
-                                    drs@ezcatch.co.in
-                                </p>
-                                <h5 class="mt-3">Mobile number</h5>
-                                <p>
-                                    +44 7423 506520
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-3 p-2">
-                            <div class="m-5 d-flex justify-content-center justify-content-sm-start flex-column">
-                                <div class="mx-1 mb-1" id="facebook">
-                                    <a href="https://www.facebook.com/people/Ezcatch-Pvt-Ltd/61560141517826/"
-                                        aria-label="Facebook" class="facebook"><i class="bi bi-facebook"></i>
-                                        Facebook</a>
-                                </div>
-                                <div class="m-1" id="twitter-x">
-                                    <a href="https://x.com/EzcatchLtd" aria-label="Twitter" class="twitter"><i
-                                            class="bi bi-twitter-x"></i> Twitter X</a>
-                                </div>
-                                <div class="m-1" id="youtube">
-                                    <a href="https://www.youtube.com/@ezcatchltd" aria-label="Youtube"
-                                        class="youtube"><i class="bi bi-youtube"></i> Youtube</a>
-                                </div>
-                                <div class="m-1" id="linkedin">
-                                    <a href="https://www.linkedin.com/company/ezcatch-ltd/" aria-label="LinkedIn"
-                                        class="linkedin"><i class="bi bi-linkedin"></i> LinkedIn</a>
-                                </div>
-                                <div class="m-1" id="instagram">
-                                    <a href="https://www.instagram.com/ezcatchltd/" aria-label="Instagram"
-                                        class="instagram"><i class="bi bi-instagram"></i> Instagram</a>
-                                </div>
-                                <div class="mx-1 mt-1" id="pinterest">
-                                    <a href="https://www.pinterest.com/drs0408/" aria-label="pinterest"
-                                        class="pinterest"><i class="bi bi-pinterest"></i> Pinterest</a>
-                                </div>
+                            <div class="footer-social-icon">
+                                <a href="https://www.facebook.com/people/Ezcatch-Pvt-Ltd/61560141517826/"><i class="bi bi-facebook"></i></a>
+                                <a href="https://x.com/EzcatchLtd"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.youtube.com/@ezcatchltd"><i class="bi bi-youtube"></i></a>
+                                <a href="https://www.linkedin.com/company/ezcatch-ltd/"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://www.instagram.com/ezcatchltd?igsh=MWNqNGNhaHk0a3pqNQ=="><i class="bi bi-instagram"></i></a>
+                                <a href="https://pin.it/5GF5wKoXV"><i class="bi bi-pinterest"></i></a>
+
                             </div>
                         </div>
                     </div>
-                </footer>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30 col-space">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h4>Quick Links</h4>
+                            </div>
+                            <ul>
+                                <li><a href="https://ezcatch.co.in/">Home</a></li>
+                                <li><a href="https://ezcatch.co.in/about-us/">About Us</a></li>
+                                <li><a href="https://ezcatch.co.in/contact-us/">Contact Us</a></li>
+                                <li><a href="https://ezcatch.co.in/portfolio/">Portfolio</a></li>
+                                <li><a href="https://ezcatch.co.in/case-studies/">Case Studies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50 col-space">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h4>Get in Touch
+                                </h4>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <h3>United Kingdom</h3>
+                                <div class="footer-address">
+                                   <i class="bi bi-geo-alt-fill"></i>
+                                    <a href="https://maps.app.goo.gl/5QaVE9sdw6cTdiSv9">307, Green Lane, Seven Kings, IG39TL, United Kingdom</a>
+                                </div>
+
+                                <h3>India</h3>
+                                <div class="footer-address">
+                                   <i class="bi bi-geo-alt-fill"></i>
+                                    <a href="https://maps.app.goo.gl/3odijdUCprsiCjqP6">23 Tulsi Villa Society, Near ambisan modan school, Laskana Surat, Gujarat India 394185</a>
+                                </div>
+
+                                <div class="footer-address">
+                                    <i class="fa fa-envelope"></i>
+                                    <a href="mailto:drs@ezcatch.co.in">drs@ezcatch.co.in</a>
+                                </div>
+
+                                <div class="footer-address">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <a href="tel:+44 7423 506520">+44 7423 506520</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    {{-- <section>@include('footer')</section> --}}
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center ">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2024,  All rights reserved by <a href="https://ezcatch.co.in/">EZCATCH</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="{{ asset('assets/js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script>

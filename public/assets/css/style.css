@@ -1438,3 +1438,106 @@ select.form-control option[value=""][disabled] {
   }
 }
 /*---------------------------------------------------- */
+
+/* gc css */
+.nav-link{
+  font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-right: 16px;
+
+}
+.navbar-nav .dropdown-menu{
+  padding: 0;
+}
+ul.dropdown-menu li a.dropdown-item{
+  padding: 13px 15px;
+  border-radius: 5px;
+}
+ul.dropdown-menu li a.dropdown-item:hover{
+  background-color: #273272 !important;
+    color: white !important;
+    border-radius: 0;
+}
+
+header {
+  z-index: 10000;background-color: white;font-size: 16px;font-weight: 500;
+}
+.top-header{
+  background-color: #273272;color:white
+}
+/* from head <style> tag css hrml doc */
+.contact-us {
+  background-color: #273272 !important;
+  color: white !important;
+  padding: 8px 28px;
+}
+
+.contact-us:hover {
+  background-color: white !important;
+  color: #273272 !important;
+}
+
+ul.dropdown-menu li a.dropdown-item:hover {
+  background-color: #273272 !important;
+  color: white !important;
+}
+.fa,
+        .fas {
+            font-family: 'Font Awesome 5 Free' !important;
+        }
+
+        * {
+            font-family: "Exo", sans-serif !important;
+            font-optical-sizing: auto !important;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        span.error,
+        .required {
+            color: red;
+        }
+
+        .next-btn {
+            width: 150px !important;
+            height: 55px !important;
+            line-height: 50px !important;
+            background-color: black !important;
+            color: white !important;
+        }
+
+        .next-btn:hover {
+            background-color: white !important;
+            color: black !important;
+        }
+
+        @media (max-width: 992px) {
+            .navbar-collapse {
+                position: absolute;
+                top: 60px;
+                /* Adjust based on your navbar height */
+                left: 0;
+                right: 0;
+                width: 100%;
+            }
+        }
+
+        .navbar-nav div.dropdown-menu {
+            width: 100vw;
+            /* Full width of viewport */
+            left: 0;
+            /* Align to the left */
+            right: 0;
+            /* Align to the right */
+            max-height: 70vh;
+            /* Maximum height to make it scrollable */
+            overflow-y: auto;
+            /* Enable vertical scrolling */
+        }
+
+
+
+/* .wrapper {
+    padding: 100px 0;
+} */

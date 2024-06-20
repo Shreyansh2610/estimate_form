@@ -1,0 +1,126 @@
+body{
+    font-family: "Exo", Sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.fa.fa-twitter{
+	font-family:sans-serif;
+}
+.fa.fa-twitter::before{
+	content:"𝕏";
+	font-size:1.2em;
+}
+ul,li,a,p{
+    padding: 0;
+    margin: 0;
+}
+footer{
+    background: url(../img/bg-footer-1-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1000;
+}
+.footer-widget-heading h4{
+    color: #fff;
+    margin-bottom: 18px;
+}
+h3{
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+.footer-widget ul li {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 6px 0;
+}
+.footer-widget ul li a{
+    color: #8a99b4;
+    margin: 24px 0;
+    font-family: Poppins;
+}
+.footer-widget ul li a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-text p{
+    color: #FFFFFFED;
+    font-family: "Exo", Sans-serif;
+    font-size: 16px;
+    line-height: 1.63em;
+    margin: 25px 0px 25px 0px;
+    max-width: 290px;
+    font-weight: 700;
+
+}
+.footer-address i{
+    background: #000;
+    padding: 12px 17px;
+    border-radius: 100%;
+    font-size: 20px;
+}
+.footer-text{
+    color: #FFFFFFED;
+    font-family: "Exo", Sans-serif;
+    font-size: 16px;
+    line-height: 1.63em;
+    margin: 25px 0px 25px 0px;
+}
+
+.footer-social-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-social-icon a{
+    background-color: #15284C;
+    padding: 10px 15px ;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+.footer-social-icon a:hover{
+    background-color: #0E5AF2;
+}
+
+.footer-logo img{
+    width: 300px;
+    height: 81px;
+}
+.footer-address{
+    margin: 24px 0;
+    max-width: 315px;
+    display: flex;
+}
+.footer-address a{
+    color: #fff;
+    margin-left: 16PX;
+}
+.footer-address a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.copyright-area{
+    background-color: #0B2048;
+    color: #8a99b4;
+    padding: 24px 0px 24px 0px;
+    font-size: 14px;
+}
+.copyright-area a{
+    color: #fff;
+    margin-left: 8px;
+}
+@media only screen and (max-width: 767px) {
+    footer{
+        background-color: #0B2048;
+        background-image: none;
+    }
+    .col-space{
+        margin-top: 40px;
+    }
+
+}
+@media only screen and (max-width:991px){
+    .col-space{
+        margin-top: 40px;
+    }
+}
