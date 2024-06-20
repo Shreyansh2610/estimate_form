@@ -806,8 +806,8 @@
                                                 <label for="time_zone" class="mb-1">
                                                     <h5 for="date">Date<span class="required">*</span></h5>
                                                 </label>
-                                                <input type="text" name="date" id="date"
-                                                    placeholder="Enter date" style="height: 45px;"
+                                                <input type="text" name="date" id="date" readonly
+                                                    placeholder="Enter date" style="height: 45px;background-color: white;"
                                                     class="form-control date datepicker  mb-0 px-3">
                                             </div>
 
@@ -1051,6 +1051,7 @@
             $('#form').submit(function(e) {
                 e.preventDefault();
                 let form = $(this);
+                console.log(form.find('[name="date"]').val());
                 form.validate({
                     rules: {
                         'full_name': 'required',
@@ -1080,11 +1081,7 @@
                     errorElement: 'span',
                     errorLabelContainer: '.errorTxt',
                     errorPlacement: function(error, element) {
-                        if (element == 'date') {
-                            error.appendTo(element.parent(".date"));
-                        } else {
-                            error.appendTo(element.parent("div"));
-                        }
+                        error.appendTo(element.parent("div"));
 
                     }
                 });
