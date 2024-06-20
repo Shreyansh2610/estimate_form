@@ -16,15 +16,6 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/colors/switch.css">
     <!-- Color Alternatives -->
-    {{-- <link href="{{ asset('assets/css/colors/color-2.css') }}" rel="alternate stylesheet" type="text/css"
-        title="color-2">
-    <link href="{{ asset('assets/css/colors/color-3.css') }}" rel="alternate stylesheet" type="text/css"
-        title="color-3">
-    <link href="{{ asset('assets/css/colors/color-4.css') }}" rel="alternate stylesheet" type="text/css"
-        title="color-4">
-    <link href="{{ asset('assets/css/colors/color-5.css') }}" rel="alternate stylesheet" type="text/css"
-        title="color-5"> --}}
-    <link href="{{ asset('assets/custom/style.css') }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     {{-- <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" /> --}}
@@ -37,9 +28,7 @@
 
 <body>
 
-    {{-- <section>@include('header')</section> --}}
-
-    <header class="position-fixed w-100">
+    <header class="sticky-top">
         <div class="py-3 top-header">
             <div class="container">
                 <div class="row">
@@ -85,6 +74,7 @@
                 </div>
             </div>
         </div>
+        <div class="navbar-header">
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 80px;">
                 <div class="container-fluid px-0 d-flex justify-content-between">
@@ -305,17 +295,16 @@
                 </div>
             </nav>
         </div>
-    </header>
+    </div>
+</header>
     <div class="clearfix"></div>
-    <div class="wrapper"> {{-- padding: 100px 0;  --}}
+
+    <main class="wrapper">
         <div class="row">
-            <div class="col-12 col-lg-3" style="background-image: url('{{ asset('assets/img/side-img.jpg') }}');">
-                <div class="steps-area steps-area-fixed h-100">
-                    <div class="image-holder">
-                        {{-- <img src="/assets/img/side-img.jpg" alt="" style=""> --}}
-                    </div>
+            <div class="col-12 col-lg-4" style="background-image: url('assets/img/side-img.jpg');">
+                <div class="steps-area h-100">
                     <div class="steps clearfix"
-                        style="z-index:10000;position:relative;opacity:1;float:right;right:15%;">
+                        style="position:relative;float:right;">
                         <ul class="tablist multisteps-form__progress">
                             <li class="multisteps-form__progress-btn js-active current" data-id="1">
                                 <span>1</span>
@@ -330,9 +319,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-9">
+            <div class="col-12 col-lg-8 fomr-area">
+
                 <form class="multisteps-form__form form-field-start mb-6" action="javascript:;"
-                    data-action="{{ route('formRequestSubmit') }}" id="form" method="POST">@csrf
+                    data-action="{{ route('formRequestSubmit') }}" id="form" method="POST">
                     <div class="form-area position-relative">
                         <!-- div 1 -->
                         <div class="multisteps-form__panel mb-3 js-active" data-animation="slideHorz" data-id="1">
@@ -405,13 +395,7 @@
                                                             style="width: 147px;height:53px;line-height:49px;background-color:black;color:white;font-size:20px;">
                                                             NEXT <i class="fa fa-arrow-right"></i>
                                                         </button>
-                                                        {{-- <div class="actions" style="padding: 0;margin-right:0;right:0;">
-                                                    <ul>
-                                                        <li><span class="py-1 next-btn-1" title="NEXT"
-                                                                style="width: 147px;height:53px;line-height:49px;background-color:black;color:white;font-size:20px;">NEXT
-                                                                <i class="fa fa-arrow-right"></i></span></li>
-                                                    </ul>
-                                                </div> --}}
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -454,7 +438,7 @@
                                                 <label for="budget" class="mb-1">
                                                     <h5>Budget<span class="required">*</span></h5>
                                                 </label>
-                                                {{-- <input type="text" id="full_name" name="full_name" class="form-control" placeholder="Enter Full name"> --}}
+
                                                 <select name="budget" id="budget" class="form-control mb-0 px-3"
                                                     style="height: 45px;background-position-y: 9px;">
                                                     <option value="">Select Budget</option>
@@ -513,16 +497,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.inner -->
-                            <div class="actions">
-                                <ul>
-                                    {{-- <li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-left"></i> BACK
-                                    </span></li> --}}
-                                    {{-- <li><button class="next-btn-2"
-                                    style="width: 147px;height:53px;line-height:49px;background-color:black;color:white;font-size:20px;">NEXT
-                                    <i class="fa fa-arrow-right"></i></button></li> --}}
-                                </ul>
-                            </div>
+
                         </div>
                     </div>
                     <!-- div 3 -->
@@ -823,11 +798,7 @@
                                                     placeholder="Enter date" style="height: 45px;"
                                                     class="form-control date datepicker  mb-0 px-3">
                                             </div>
-                                            {{-- <div class="date-picker date datepicker">
-                                            <input type="text" name="date" id="date"
-                                                class="form-control">
-                                            <div class="input-group-append d-none"><span>ADD DATE</span></div>
-                                        </div> --}}
+
 
                                             <div class="form-inner-area mb-1">
                                                 <label for="meeting" class="mb-1">
@@ -837,16 +808,14 @@
                                             <div class="plan-area pt-0">
                                                 <div class="plan-icon-text text-center active">
                                                     <div class="plan-icon">
-                                                        {{-- <i class="fas fa-chess-queen"></i> --}}
-                                                        <img src="{{ asset('assets/img/zoom_logo.svg') }}"
+
+                                                        <img src="assets/img/zoom_logo.svg"
                                                             alt="Zoom" height="50px" width="70px"
                                                             srcset="">
                                                     </div>
                                                     <div class="plan-text">
                                                         <h3>Zoom</h3>
-                                                        <p>Zoom is a proprietary videotelephony software program
-                                                            developed
-                                                            by Zoom Video Communications. The free plan allows up to 100
+                                                        <p>Zoom is a proprietary videotelephony software that free plan allows up to 100
                                                             concurrent participants, with a 40-minute time restriction.
                                                         </p>
                                                         <input type="radio" name="meeting" id="meeting"
@@ -855,8 +824,8 @@
                                                 </div>
                                                 <div class="plan-icon-text text-center">
                                                     <div class="plan-icon">
-                                                        {{-- <i class="fas fa-cubes"></i> --}}
-                                                        <img src="{{ asset('assets/img/google_meet.png') }}"
+
+                                                        <img src="assets/img/google_meet.png"
                                                             alt="Zoom" height="50px" width="50px"
                                                             srcset="">
                                                     </div>
@@ -864,9 +833,7 @@
                                                         <h3>Google Meet</h3>
                                                         <p>Google Meet is a video communication service developed by
                                                             Google.
-                                                            It is one of two apps that constitute the replacement for
-                                                            Google
-                                                            Hangouts, the other being Google Chat.</p>
+                                                        </p>
                                                         <input type="radio" name="meeting" id="meeting"
                                                             value="Google Meet">
                                                     </div>
@@ -885,20 +852,14 @@
                                 </div>
                             </div>
                             <!-- ./inner -->
-                            {{-- <div class="actions">
-                        <ul>
-                            <li><button type="submit" title="NEXT"
-                                    style="width: 147px;height:53px;line-height:49px;font-size:20px;">SUBMIT <i
-                                        class="fa fa-arrow-right"></i></button></li>
-                            </li>
-                        </ul>
-                    </div> --}}
+
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-    </div>
+    </main>
+
     <footer class="footer-section pt-3">
         <div class="container">
             <div class="footer-content pt-5 pb-5">
