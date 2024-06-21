@@ -803,12 +803,12 @@
 
                                         <div class="step-content-field">
                                             <div class="form-inner-area mb-3">
-                                                <label for="time_zone" class="mb-1">
-                                                    <h5 for="date">Date<span class="required">*</span></h5>
+                                                <label for="date" class="mb-1">
+                                                    <h5>Date<span class="required">*</span></h5>
                                                 </label>
                                                 <input type="text" name="date" id="date" readonly
                                                     placeholder="Enter date" style="height: 45px;background-color: white;"
-                                                    class="form-control date datepicker  mb-0 px-3">
+                                                    class="form-control datepicker  mb-0 px-3">
                                             </div>
 
 
@@ -1022,7 +1022,6 @@
             $('.next-btn-2').on('click', function(e) {
                 e.preventDefault();
                 let form1 = $('#form');
-                console.log(form1);
                 form1.validate({
                     rules: {
                         'budget': 'required',
