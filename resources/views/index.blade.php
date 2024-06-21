@@ -325,7 +325,7 @@
                     data-action="{{ route('formRequestSubmit') }}" id="form" method="POST">@csrf
                     <div class="form-area position-relative">
                         <!-- div 1 -->
-                        <div class="multisteps-form__panel mb-3 js-active" data-animation="slideHorz" data-id="1">
+                        <div class="multisteps-form__panel mb-3 js-active" data-animation="slideVert" data-id="1">
                             <div class="wizard-forms">
                                 <div class="inner clearfix">
                                     <div class="form-content pera-content">
@@ -410,7 +410,7 @@
                         </div>
                     </div>
                     <!-- div 2 -->
-                    <div class="multisteps-form__panel mb-3" data-animation="slideHorz" data-id="2">
+                    <div class="multisteps-form__panel mb-3" data-animation="slideVert" data-id="2">
                         <div class="wizard-forms">
                             <div class="inner clearfix">
                                 <div class="form-content pera-content  pt-2">
@@ -513,7 +513,7 @@
                         </div>
                     </div>
                     <!-- div 3 -->
-                    <div class="multisteps-form__panel mb-3" data-animation="slideHorz" data-id="3">
+                    <div class="multisteps-form__panel mb-3" data-animation="slideVert" data-id="3">
                         <div class="wizard-forms">
                             <div class="inner clearfix">
                                 <div class="form-content pera-content pt-2">
@@ -1019,7 +1019,7 @@
                     setTimeout(() => {
                         $("html, body").animate({ scrollTop: 0 }, "fast");
                         $("html, body").render();
-                    }, 1500);
+                    }, 500);
                 }
             });
 
