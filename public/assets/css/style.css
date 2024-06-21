@@ -1690,3 +1690,10 @@ span.error,
     max-width: 100%;
     display: inline-block;
 }
+
+
+@media (max-width: 576px) {
+    .header-contact-us {
+      font-size: 14px;
+    }
+  }

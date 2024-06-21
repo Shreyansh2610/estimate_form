@@ -2,7 +2,7 @@ body{
     font-family: "Exo", Sans-serif;
     margin: 0;
     padding: 0;
-}    
+}
 .fa.fa-twitter{
 	font-family:sans-serif;
 }
@@ -89,6 +89,7 @@ h3{
     margin: 24px 0;
     max-width: 315px;
     display: flex;
+    align-items: center;
 }
 .footer-address a{
     color: #fff;

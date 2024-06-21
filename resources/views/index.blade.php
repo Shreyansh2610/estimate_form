@@ -33,9 +33,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-6">
-                        <div class="d-flex justify-content-center justify-content-sm-start  flex-sm-row">
+                        <div class="d-flex justify-content-center justify-content-sm-start  flex-sm-row header-contact-us">
                             <span
-                                class="d-flex justify-content-center justify-content-sm-start align-content-center me-sm-3"><i
+                                class="d-flex justify-content-center justify-content-sm-start align-content-center me-3"><i
                                     class="fa fa-phone me-1" style="line-height: 1.5" aria-hidden="true"></i> +(44) 7423
                                 506520</span>
                             <span class="d-flex justify-content-center justify-content-sm-start align-content-center"><i
@@ -413,7 +413,7 @@
                     <div class="multisteps-form__panel mb-3" data-animation="slideHorz" data-id="2">
                         <div class="wizard-forms">
                             <div class="inner clearfix">
-                                <div class="form-content pera-content">
+                                <div class="form-content pera-content  pt-2">
                                     <div class="step-inner-content">
                                         <span class="step-no bottom-line">Step 2</span>
                                         <div class="step-progress float-end">
@@ -483,7 +483,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-12 col-md-6">
-                                                        <div class="upload-icon float-end me-0">
+                                                        <div class="upload-icon float-end me-0 d-none d-md-block">
                                                             <i class="fas fa-cloud-upload-alt"></i>
                                                         </div>
                                                     </div>
@@ -969,7 +969,7 @@
     <script>
         $("#files").change(function() {
             filename = this.files[0].name
-            // console.log(filename);
+
         });
 
         function UploadFile() {
@@ -979,7 +979,7 @@
                 document.getElementById('fileContent').value = reader.result;
                 $('#showFileName').html(file.name);
                 document.getElementById('filename').value = file.name;
-                // document.getElementById('wizard').submit();
+
             }
             reader.readAsDataURL(file);
         }
@@ -1016,6 +1016,10 @@
 
                     $('.multisteps-form__progress-btn').filter('[data-id="2"]').addClass('js-active');
                     $('.multisteps-form__progress-btn').filter('[data-id="2"]').addClass('current');
+                    setTimeout(() => {
+                        $("html, body").animate({ scrollTop: 0 }, "fast");
+                        $("html, body").render();
+                    }, 1500);
                 }
             });
 
@@ -1044,6 +1048,10 @@
 
                     $('.multisteps-form__progress-btn').filter('[data-id="3"]').addClass('js-active');
                     $('.multisteps-form__progress-btn').filter('[data-id="3"]').addClass('current');
+                    setTimeout(() => {
+                        $("html, body").animate({ scrollTop: 0 }, "fast");
+                        $("html, body").render();
+                    }, 500);
                 }
             });
 
