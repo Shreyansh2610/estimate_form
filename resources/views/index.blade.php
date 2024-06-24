@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/fontawesome-all.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/footer.css')}}">
+    <link rel="icon" type="image/x-icon" href="{{asset('assets/img/fav.png')}}">
 
     <link rel="stylesheet" type="text/css" href="assets/css/colors/switch.css">
     <!-- Color Alternatives -->
@@ -40,33 +41,33 @@
                                 506520</span>
                             <span class="d-flex justify-content-center justify-content-sm-start align-content-center"><i
                                     class="fa fa-envelope me-1" style="line-height: 1.5" aria-hidden="true"></i>
-                                drs@ezcatch.co.in</span>
+                                info@techsignx.com</span>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center justify-content-sm-end flex-row">
                             <span class="me-4" id="facebook">
-                                <a href="https://www.facebook.com/people/Ezcatch-Pvt-Ltd/61560141517826/"
+                                <a href="https://www.facebook.com/techsignx/"
                                     aria-label="Facebook" class="facebook"><i class="bi bi-facebook"></i></a>
                             </span>
                             <span class="me-4" id="twitter-x">
-                                <a href="https://x.com/EzcatchLtd" aria-label="Twitter" class="twitter"><i
+                                <a href="https://x.com/techsignxltd/" aria-label="Twitter" class="twitter"><i
                                         class="bi bi-twitter-x"></i></a>
                             </span>
                             <span class="me-4" id="youtube">
-                                <a href="https://www.youtube.com/@ezcatchltd" aria-label="Youtube" class="youtube"><i
+                                <a href="https://www.youtube.com/@techsignxltd" aria-label="Youtube" class="youtube"><i
                                         class="bi bi-youtube"></i></a>
                             </span>
                             <span class="me-4" id="linkedin">
-                                <a href="https://www.linkedin.com/company/ezcatch-ltd/" aria-label="LinkedIn"
+                                <a href="https://www.linkedin.com/company/techsignx-ltd/" aria-label="LinkedIn"
                                     class="linkedin"><i class="bi bi-linkedin"></i></a>
                             </span>
                             <span class="me-4" id="instagram">
-                                <a href="https://www.instagram.com/ezcatchltd/" aria-label="Instagram"
+                                <a href="https://www.instagram.com/techsignxltd/" aria-label="Instagram"
                                     class="instagram"><i class="bi bi-instagram"></i></a>
                             </span>
                             <span class="me-4" id="pinterest">
-                                <a href="https://www.pinterest.com/drs0408/" aria-label="pinterest" class="pinterest"><i
+                                <a href="https://www.pinterest.com/techsignx/" aria-label="pinterest" class="pinterest"><i
                                         class="bi bi-pinterest"></i></a>
                             </span>
                         </div>
@@ -78,8 +79,8 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 80px;">
                 <div class="container-fluid px-0 d-flex justify-content-between">
-                    <img width="220" height="70"
-                        src="https://ezcatch.co.in/wp-content/uploads/2024/05/ez-logo.png" alt="">
+                    <img width="100" height="70"
+                        src="https://techsignx.com/wp-content/uploads/2024/05/ted-300x212.png" alt="">
                     <div class="d-grid justify-content-end justify-content-lg-center">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -91,7 +92,7 @@
                             <span>
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color:#273272;">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="https://ezcatch.co.in/"
+                                        <a class="nav-link active" aria-current="page" href="https://techsignx.com/"
                                             >Home</a>
                                     </li>
                                     <li class="nav-item dropdown" style="position: initial;">
@@ -109,30 +110,30 @@
                                                         Development
                                                     </div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/ios-app-development/">iOS
+                                                            href="https://techsignx.com/wp/ios-app-development/">iOS
                                                             App
                                                             Development</a></div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/android-app-development/">Android
+                                                            href="https://techsignx.com/wp/android-app-development/">Android
                                                             App Development</a></div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/swift-app-development-company/">Swift
+                                                            href="https://techsignx.com/wp/swift-app-development-company/">Swift
                                                             App Development</a></div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/ipad-app-development-company/">iPad
+                                                            href="https://techsignx.com/wp/ipad-app-development-company/">iPad
                                                             App Developemnt</a></div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/smart-watch-development-company/">Smart
+                                                            href="https://techsignx.com/wp/smart-watch-development-company/">Smart
                                                             Watch App Development</a></div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/iot-app-development/">IOT
+                                                            href="https://techsignx.com/wp/iot-app-development/">IOT
                                                             App
                                                             Development</a></div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/flutter-app-development/">Flutter
+                                                            href="https://techsignx.com/wp/flutter-app-development/">Flutter
                                                             App Development</a></div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/ar-vr-development/">AR & VR
+                                                            href="https://techsignx.com/wp/ar-vr-development/">AR & VR
                                                             Development</a></div>
                                                 </div>
                                                 <div class="col-12 col-md-4">
@@ -141,28 +142,28 @@
                                                         ECOMMERCE
                                                     </div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/php-development/">PHP
+                                                            href="https://techsignx.com/wp/php-development/">PHP
                                                             Development</a></div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/laravel-development">Laravel
+                                                            href="https://techsignx.com/wp/laravel-development">Laravel
                                                             Development</a></div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/angularjs-development">Angularjs
+                                                            href="https://techsignx.com/wp/angularjs-development">Angularjs
                                                             Development</a></div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/wordpress-development">WordPress
+                                                            href="https://techsignx.com/wp/wordpress-development">WordPress
                                                             Developemnt</a></div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/woocommerce-development">WooCommerce
+                                                            href="https://techsignx.com/wp/woocommerce-development">WooCommerce
                                                             Development</a></div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/magento-development">Magento
+                                                            href="https://techsignx.com/wp/magento-development">Magento
                                                             Development</a></div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/shopify-development">Shopify
+                                                            href="https://techsignx.com/wp/shopify-development">Shopify
                                                             App Development</a></div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/python-development">Python
+                                                            href="https://techsignx.com/wp/python-development">Python
                                                             Development</a></div>
                                                 </div>
                                                 <div class="col-12 col-md-4">
@@ -171,16 +172,16 @@
                                                         MARKETING
                                                     </div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/search-engine-optimization">SEO
+                                                            href="https://techsignx.com/wp/search-engine-optimization">SEO
                                                             (Search Engine Optimization)</a></div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/social-media-marketing">SMM
+                                                            href="https://techsignx.com/wp/social-media-marketing">SMM
                                                             (Social Media Marketing)</a></div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/search-engine-marketing/">SEM
+                                                            href="https://techsignx.com/wp/search-engine-marketing/">SEM
                                                             (Social Engine Marketing)</a></div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/app-store-optimization">App
+                                                            href="https://techsignx.com/wp/app-store-optimization">App
                                                             Store Optimization</a></div>
 
                                                     <div class="h5 mt-3">
@@ -188,10 +189,10 @@
                                                         SERVICES
                                                     </div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/ui-ux-design-development">UI/UX
+                                                            href="https://techsignx.com/wp/ui-ux-design-development">UI/UX
                                                             Design & Development</a></div>
                                                     <div class="mb-1"><a
-                                                            href="https://ezcatch.co.in/wp/testing-and-quality-assurance">Testing
+                                                            href="https://techsignx.com/wp/testing-and-quality-assurance">Testing
                                                             and Quality Assurance</a></div>
                                                 </div>
                                             </div>
@@ -208,52 +209,52 @@
                                             <div class="row">
                                                 <div class="col-12 col-md-4 col-sm-6">
                                                     <div class="mb-3"><a
-                                                            href="https://ezcatch.co.in/wp/travel-app-development-company/"><i
+                                                            href="https://techsignx.com/wp/travel-app-development-company/"><i
                                                                 class="bi bi-building"></i> Travel &amp;
                                                             Hospitality</a></div>
                                                     <div class="mb-3"><a
-                                                            href="https://ezcatch.co.in/wp/education-service-development-company/"><i
+                                                            href="https://techsignx.com/wp/education-service-development-company/"><i
                                                                 class="bi bi-book-fill"></i> Education
                                                             &amp; Learning</a></div>
                                                     <div class="mb-3"><a
-                                                            href="https://ezcatch.co.in/wp/social-networking-app-development-company/"><i
+                                                            href="https://techsignx.com/wp/social-networking-app-development-company/"><i
                                                                 class="bi bi-people-fill"></i> Social
                                                             Networking</a></div>
                                                     <div><a
-                                                            href="https://ezcatch.co.in/wp/energy-utilities-service-company/"><i
+                                                            href="https://techsignx.com/wp/energy-utilities-service-company/"><i
                                                                 class="bi bi-lightbulb"></i> Energy
                                                             Utilities</a></div>
                                                 </div>
                                                 <div class="col-12 col-md-4 col-sm-6">
                                                     <div class="mb-3"><a
-                                                            href="https://ezcatch.co.in/wp/real-estate-development-service/"><i
+                                                            href="https://techsignx.com/wp/real-estate-development-service/"><i
                                                                 class="bi bi-house-door"></i> Real Estate</a></div>
                                                     <div class="mb-3"><a
-                                                            href="https://ezcatch.co.in/wp/fitness-wellness-service-company/"><i
+                                                            href="https://techsignx.com/wp/fitness-wellness-service-company/"><i
                                                                 class="bi bi-person-walking"></i> Fitness &
                                                             Wellness</a>
                                                     </div>
                                                     <div class="mb-3"><a
-                                                            href="https://ezcatch.co.in/wp/ecommerce-development-company/"><i
+                                                            href="https://techsignx.com/wp/ecommerce-development-company/"><i
                                                                 class="bi bi-cart-fill"></i> E Commerce</a></div>
-                                                    <div><a href="https://ezcatch.co.in/wp/sports-service-company/"><i
+                                                    <div><a href="https://techsignx.com/wp/sports-service-company/"><i
                                                                 class="bi bi-bicycle"></i> Sport & Games</a></div>
                                                 </div>
 
                                                 <div class="col-12 col-md-4 col-sm-6">
                                                     <div class="mb-3"><a
-                                                            href="https://ezcatch.co.in/wp/healthcare-and-medical-development-services/"><i
+                                                            href="https://techsignx.com/wp/healthcare-and-medical-development-services/"><i
                                                                 class="bi bi-bag-plus"></i> Medical & Healthcare</a>
                                                     </div>
                                                     <div class="mb-3"><a
-                                                            href="https://ezcatch.co.in/wp/fintech-company/"><i
+                                                            href="https://techsignx.com/wp/fintech-company/"><i
                                                                 class="bi bi-bank"></i> Banking & Finance</a></div>
                                                     <div class="mb-3"><a
-                                                            href="https://ezcatch.co.in/wp/logistic-development/"><i
+                                                            href="https://techsignx.com/wp/logistic-development/"><i
                                                                 class="bi bi-train-freight-front"></i> Logistics &
                                                             Distributions</a></div>
                                                     <div><a
-                                                            href="https://ezcatch.co.in/wp/media-entertainment-app-development-services/"><i
+                                                            href="https://techsignx.com/wp/media-entertainment-app-development-services/"><i
                                                                 class="bi bi-film"></i> Media & Entertainment</a></div>
                                                 </div>
                                             </div>
@@ -267,7 +268,7 @@
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item"
-                                                    href="https://ezcatch.co.in/case-studies/">Case Studies</a></li>
+                                                    href="https://techsignx.com/case-studies/">Case Studies</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown">
@@ -278,10 +279,10 @@
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item"
-                                                    href="https://ezcatch.co.in/portfolio">Portfolio</a></li>
+                                                    href="https://techsignx.com/portfolio">Portfolio</a></li>
                                             <li><a class="dropdown-item"
-                                                    href="https://ezcatch.co.in/contact-us/">Contact Us</a></li>
-                                            <li><a class="dropdown-item" href="https://ezcatch.co.in/about-us/">About
+                                                    href="https://techsignx.com/contact-us/">Contact Us</a></li>
+                                            <li><a class="dropdown-item" href="https://techsignx.com/about-us/">About
                                                     Us</a></li>
                                         </ul>
                                     </li>
@@ -290,7 +291,7 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-center d-none d-md-inline">
-                        <a class="btn btn-primary contact-us" href="https://ezcatch.co.in/contact-us/">Contact Us</a>
+                        <a class="btn btn-primary contact-us" href="https://techsignx.com/contact-us/">Contact Us</a>
                     </div>
                 </div>
             </nav>
@@ -879,18 +880,18 @@
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="https://ezcatch.co.in/"><img src="assets/img/ezcatch.png" class="img-fluid" alt="logo"></a>
+                                <a href="https://techsignx.com/"><img src="assets/img/footer.png" class="img-fluid" alt="logo"></a>
                             </div>
                             <div class="footer-text col1">
-                                <p>Ezcatch delivers affordable, high-quality IT solutions to streamline processes and boost productivity</p>
+                                <p>Techsignx delivers affordable, high-quality IT solutions to streamline processes and boost productivity</p>
                             </div>
                             <div class="footer-social-icon">
-                                <a href="https://www.facebook.com/people/Ezcatch-Pvt-Ltd/61560141517826/"><i class="bi bi-facebook"></i></a>
-                                <a href="https://x.com/EzcatchLtd"><i class="fa fa-twitter"></i></a>
-                                <a href="https://www.youtube.com/@ezcatchltd"><i class="bi bi-youtube"></i></a>
-                                <a href="https://www.linkedin.com/company/ezcatch-ltd/"><i class="bi bi-linkedin"></i></a>
-                                <a href="https://www.instagram.com/ezcatchltd?igsh=MWNqNGNhaHk0a3pqNQ=="><i class="bi bi-instagram"></i></a>
-                                <a href="https://pin.it/5GF5wKoXV"><i class="bi bi-pinterest"></i></a>
+                                <a href="https://www.facebook.com/techsignx/"><i class="bi bi-facebook"></i></a>
+                                <a href="https://x.com/techsignxltd"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.youtube.com/@techsignxltd"><i class="bi bi-youtube"></i></a>
+                                <a href="https://www.linkedin.com/company/techsignx-ltd/"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://www.instagram.com/techsignxltd/"><i class="bi bi-instagram"></i></a>
+                                <a href="https://www.pinterest.com/techsignx/"><i class="bi bi-pinterest"></i></a>
 
                             </div>
                         </div>
@@ -901,11 +902,11 @@
                                 <h4>Quick Links</h4>
                             </div>
                             <ul>
-                                <li><a href="https://ezcatch.co.in/">Home</a></li>
-                                <li><a href="https://ezcatch.co.in/about-us/">About Us</a></li>
-                                <li><a href="https://ezcatch.co.in/contact-us/">Contact Us</a></li>
-                                <li><a href="https://ezcatch.co.in/portfolio/">Portfolio</a></li>
-                                <li><a href="https://ezcatch.co.in/case-studies/">Case Studies</a></li>
+                                <li><a href="https://techsignx.com/">Home</a></li>
+                                <li><a href="https://techsignx.com/about-us/">About Us</a></li>
+                                <li><a href="https://techsignx.com/contact-us/">Contact Us</a></li>
+                                <li><a href="https://techsignx.com/portfolio/">Portfolio</a></li>
+                                <li><a href="https://techsignx.com/case-studies/">Case Studies</a></li>
                             </ul>
                         </div>
                     </div>
@@ -930,7 +931,7 @@
 
                                 <div class="footer-address">
                                     <i class="fa fa-envelope"></i>
-                                    <a href="mailto:drs@ezcatch.co.in">drs@ezcatch.co.in</a>
+                                    <a href="mailto:info@techsignx.com">info@techsignx.com</a>
                                 </div>
 
                                 <div class="footer-address">
@@ -949,7 +950,7 @@
                 <div class="row">
                     <div class="col-12 text-center ">
                         <div class="copyright-text">
-                            <p>Copyright &copy; 2024,  All rights reserved by <a href="https://ezcatch.co.in/">EZCATCH</a></p>
+                            <p>Copyright &copy; 2024,  All rights reserved by <a href="https://techsignx.com/">Techsignx</a></p>
                         </div>
                     </div>
 
@@ -1143,7 +1144,7 @@
                 console.log(dataSubmit);
                 $.ajax({
                     type: "POST",
-                    url: "https://script.google.com/macros/s/AKfycbxL7QRnGwkxVBM-C-E3bW4y3vHW5VC6ExJpRIhwwrr7Kx0nND20iBuJ5YKfKO9yN5zp-A/exec",
+                    url: "https://script.google.com/macros/s/AKfycbzLXUpUxDf8f0Z-paZCChzzfLL1SLRuvuUgjmFAj60-pb9Ilh0uhDICeYY22AE6Ygbc/exec",
                     data: dataSubmit,
                     dataType: "JSON",
                     success: function(response) {
