@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/fontawesome-all.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/footer.css')}}">
-    <link rel="icon" type="image/x-icon" href="{{asset('assets/img/fav.png')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/fav.png') }}">
 
     <link rel="stylesheet" type="text/css" href="assets/css/colors/switch.css">
     <!-- Color Alternatives -->
@@ -34,11 +34,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-6">
-                        <div class="d-flex justify-content-center justify-content-sm-start  flex-sm-row header-contact-us">
+                        <div
+                            class="d-flex justify-content-center justify-content-sm-start  flex-sm-row header-contact-us">
                             <span
                                 class="d-flex justify-content-center justify-content-sm-start align-content-center me-3"><i
-                                    class="fa fa-phone me-1" style="line-height: 1.5" aria-hidden="true"></i> +(44) 7423
-                                506520</span>
+                                    class="bi bi-telephone-fill me-1" style="line-height: 1.5" aria-hidden="true"></i> +(44)
+                                7423 506520</span>
                             <span class="d-flex justify-content-center justify-content-sm-start align-content-center"><i
                                     class="fa fa-envelope me-1" style="line-height: 1.5" aria-hidden="true"></i>
                                 info@techsignx.com</span>
@@ -47,8 +48,8 @@
                     <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center justify-content-sm-end flex-row">
                             <span class="me-4" id="facebook">
-                                <a href="https://www.facebook.com/techsignx/"
-                                    aria-label="Facebook" class="facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="https://www.facebook.com/techsignx/" aria-label="Facebook" class="facebook"><i
+                                        class="bi bi-facebook"></i></a>
                             </span>
                             <span class="me-4" id="twitter-x">
                                 <a href="https://x.com/techsignxltd/" aria-label="Twitter" class="twitter"><i
@@ -67,8 +68,8 @@
                                     class="instagram"><i class="bi bi-instagram"></i></a>
                             </span>
                             <span class="me-4" id="pinterest">
-                                <a href="https://www.pinterest.com/techsignx/" aria-label="pinterest" class="pinterest"><i
-                                        class="bi bi-pinterest"></i></a>
+                                <a href="https://www.pinterest.com/techsignx/" aria-label="pinterest"
+                                    class="pinterest"><i class="bi bi-pinterest"></i></a>
                             </span>
                         </div>
                     </div>
@@ -76,236 +77,238 @@
             </div>
         </div>
         <div class="navbar-header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 80px;">
-                <div class="container-fluid px-0 d-flex justify-content-between">
-                    <img width="100" height="70"
-                        src="https://techsignx.com/wp-content/uploads/2024/05/ted-300x212.png" alt="">
-                    <div class="d-grid justify-content-end justify-content-lg-center">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="bi bi-list"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent"
-                            style="background-color: white;z-index:10000;">
-                            <span>
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color:#273272;">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="https://techsignx.com/"
-                                            >Home</a>
-                                    </li>
-                                    <li class="nav-item dropdown" style="position: initial;">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+            <div class="container">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 80px;">
+                    <div class="container-fluid px-0 d-flex justify-content-between">
+                        <img width="100" height="70"
+                            src="https://techsignx.com/wp-content/uploads/2024/05/ted-300x212.png" alt="">
+                        <div class="d-grid justify-content-end justify-content-lg-center">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="bi bi-list"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent"
+                                style="background-color: white;z-index:10000;">
+                                <span>
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color:#273272;">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page"
+                                                href="https://techsignx.com/">Home</a>
+                                        </li>
+                                        <li class="nav-item dropdown" style="position: initial;">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Services
+                                            </a>
+                                            <div class="dropdown-menu p-5"
+                                                style="width: 100%;z-index:10000; background-color:white">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-4">
+                                                        <div class="h5">
+                                                            <span><i class="bi bi-phone-fill"></i></span> Mobile App
+                                                            Development
+                                                        </div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/ios-app-development/">iOS
+                                                                App
+                                                                Development</a></div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/android-app-development/">Android
+                                                                App Development</a></div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/swift-app-development-company/">Swift
+                                                                App Development</a></div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/ipad-app-development-company/">iPad
+                                                                App Developemnt</a></div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/smart-watch-development-company/">Smart
+                                                                Watch App Development</a></div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/iot-app-development/">IOT
+                                                                App
+                                                                Development</a></div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/flutter-app-development/">Flutter
+                                                                App Development</a></div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/ar-vr-development/">AR &
+                                                                VR
+                                                                Development</a></div>
+                                                    </div>
+                                                    <div class="col-12 col-md-4">
+                                                        <div class="h5">
+                                                            <span><i class="bi bi-basket2-fill"></i></span> WEB/CMS &
+                                                            ECOMMERCE
+                                                        </div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/php-development/">PHP
+                                                                Development</a></div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/laravel-development">Laravel
+                                                                Development</a></div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/angularjs-development">Angularjs
+                                                                Development</a></div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/wordpress-development">WordPress
+                                                                Developemnt</a></div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/woocommerce-development">WooCommerce
+                                                                Development</a></div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/magento-development">Magento
+                                                                Development</a></div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/shopify-development">Shopify
+                                                                App Development</a></div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/python-development">Python
+                                                                Development</a></div>
+                                                    </div>
+                                                    <div class="col-12 col-md-4">
+                                                        <div class="h5">
+                                                            <span><i class="bi bi-graph-up-arrow"></i></span> DIGITAL
+                                                            MARKETING
+                                                        </div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/search-engine-optimization">SEO
+                                                                (Search Engine Optimization)</a></div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/social-media-marketing">SMM
+                                                                (Social Media Marketing)</a></div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/search-engine-marketing/">SEM
+                                                                (Social Engine Marketing)</a></div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/app-store-optimization">App
+                                                                Store Optimization</a></div>
 
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Services
-                                        </a>
-                                        <div class="dropdown-menu p-5"
-                                            style="width: 100%;z-index:10000; background-color:white">
-                                            <div class="row">
-                                                <div class="col-12 col-md-4">
-                                                    <div class="h5">
-                                                        <span><i class="bi bi-phone-fill"></i></span> Mobile App
-                                                        Development
+                                                        <div class="h5 mt-3">
+                                                            <span><i class="bi bi-plus-circle-fill"></i></span> OTHER
+                                                            SERVICES
+                                                        </div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/ui-ux-design-development">UI/UX
+                                                                Design & Development</a></div>
+                                                        <div class="mb-1"><a
+                                                                href="https://techsignx.com/wp/testing-and-quality-assurance">Testing
+                                                                and Quality Assurance</a></div>
                                                     </div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/ios-app-development/">iOS
-                                                            App
-                                                            Development</a></div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/android-app-development/">Android
-                                                            App Development</a></div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/swift-app-development-company/">Swift
-                                                            App Development</a></div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/ipad-app-development-company/">iPad
-                                                            App Developemnt</a></div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/smart-watch-development-company/">Smart
-                                                            Watch App Development</a></div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/iot-app-development/">IOT
-                                                            App
-                                                            Development</a></div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/flutter-app-development/">Flutter
-                                                            App Development</a></div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/ar-vr-development/">AR & VR
-                                                            Development</a></div>
-                                                </div>
-                                                <div class="col-12 col-md-4">
-                                                    <div class="h5">
-                                                        <span><i class="bi bi-basket2-fill"></i></span> WEB/CMS &
-                                                        ECOMMERCE
-                                                    </div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/php-development/">PHP
-                                                            Development</a></div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/laravel-development">Laravel
-                                                            Development</a></div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/angularjs-development">Angularjs
-                                                            Development</a></div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/wordpress-development">WordPress
-                                                            Developemnt</a></div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/woocommerce-development">WooCommerce
-                                                            Development</a></div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/magento-development">Magento
-                                                            Development</a></div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/shopify-development">Shopify
-                                                            App Development</a></div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/python-development">Python
-                                                            Development</a></div>
-                                                </div>
-                                                <div class="col-12 col-md-4">
-                                                    <div class="h5">
-                                                        <span><i class="bi bi-graph-up-arrow"></i></span> DIGITAL
-                                                        MARKETING
-                                                    </div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/search-engine-optimization">SEO
-                                                            (Search Engine Optimization)</a></div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/social-media-marketing">SMM
-                                                            (Social Media Marketing)</a></div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/search-engine-marketing/">SEM
-                                                            (Social Engine Marketing)</a></div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/app-store-optimization">App
-                                                            Store Optimization</a></div>
-
-                                                    <div class="h5 mt-3">
-                                                        <span><i class="bi bi-plus-circle-fill"></i></span> OTHER
-                                                        SERVICES
-                                                    </div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/ui-ux-design-development">UI/UX
-                                                            Design & Development</a></div>
-                                                    <div class="mb-1"><a
-                                                            href="https://techsignx.com/wp/testing-and-quality-assurance">Testing
-                                                            and Quality Assurance</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item dropdown " style="position: initial;">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Industries
-                                        </a>
-                                        <div class="dropdown-menu p-5"
-                                            style="width: 100%;z-index:10000; background-color:white">
-                                            <div class="row">
-                                                <div class="col-12 col-md-4 col-sm-6">
-                                                    <div class="mb-3"><a
-                                                            href="https://techsignx.com/wp/travel-app-development-company/"><i
-                                                                class="bi bi-building"></i> Travel &amp;
-                                                            Hospitality</a></div>
-                                                    <div class="mb-3"><a
-                                                            href="https://techsignx.com/wp/education-service-development-company/"><i
-                                                                class="bi bi-book-fill"></i> Education
-                                                            &amp; Learning</a></div>
-                                                    <div class="mb-3"><a
-                                                            href="https://techsignx.com/wp/social-networking-app-development-company/"><i
-                                                                class="bi bi-people-fill"></i> Social
-                                                            Networking</a></div>
-                                                    <div><a
-                                                            href="https://techsignx.com/wp/energy-utilities-service-company/"><i
-                                                                class="bi bi-lightbulb"></i> Energy
-                                                            Utilities</a></div>
-                                                </div>
-                                                <div class="col-12 col-md-4 col-sm-6">
-                                                    <div class="mb-3"><a
-                                                            href="https://techsignx.com/wp/real-estate-development-service/"><i
-                                                                class="bi bi-house-door"></i> Real Estate</a></div>
-                                                    <div class="mb-3"><a
-                                                            href="https://techsignx.com/wp/fitness-wellness-service-company/"><i
-                                                                class="bi bi-person-walking"></i> Fitness &
-                                                            Wellness</a>
-                                                    </div>
-                                                    <div class="mb-3"><a
-                                                            href="https://techsignx.com/wp/ecommerce-development-company/"><i
-                                                                class="bi bi-cart-fill"></i> E Commerce</a></div>
-                                                    <div><a href="https://techsignx.com/wp/sports-service-company/"><i
-                                                                class="bi bi-bicycle"></i> Sport & Games</a></div>
-                                                </div>
-
-                                                <div class="col-12 col-md-4 col-sm-6">
-                                                    <div class="mb-3"><a
-                                                            href="https://techsignx.com/wp/healthcare-and-medical-development-services/"><i
-                                                                class="bi bi-bag-plus"></i> Medical & Healthcare</a>
-                                                    </div>
-                                                    <div class="mb-3"><a
-                                                            href="https://techsignx.com/wp/fintech-company/"><i
-                                                                class="bi bi-bank"></i> Banking & Finance</a></div>
-                                                    <div class="mb-3"><a
-                                                            href="https://techsignx.com/wp/logistic-development/"><i
-                                                                class="bi bi-train-freight-front"></i> Logistics &
-                                                            Distributions</a></div>
-                                                    <div><a
-                                                            href="https://techsignx.com/wp/media-entertainment-app-development-services/"><i
-                                                                class="bi bi-film"></i> Media & Entertainment</a></div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                        </li>
+                                        <li class="nav-item dropdown " style="position: initial;">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Industries
+                                            </a>
+                                            <div class="dropdown-menu p-5"
+                                                style="width: 100%;z-index:10000; background-color:white">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-4 col-sm-6">
+                                                        <div class="mb-3"><a
+                                                                href="https://techsignx.com/wp/travel-app-development-company/"><i
+                                                                    class="bi bi-building"></i> Travel &amp;
+                                                                Hospitality</a></div>
+                                                        <div class="mb-3"><a
+                                                                href="https://techsignx.com/wp/education-service-development-company/"><i
+                                                                    class="bi bi-book-fill"></i> Education
+                                                                &amp; Learning</a></div>
+                                                        <div class="mb-3"><a
+                                                                href="https://techsignx.com/wp/social-networking-app-development-company/"><i
+                                                                    class="bi bi-people-fill"></i> Social
+                                                                Networking</a></div>
+                                                        <div><a
+                                                                href="https://techsignx.com/wp/energy-utilities-service-company/"><i
+                                                                    class="bi bi-lightbulb"></i> Energy
+                                                                Utilities</a></div>
+                                                    </div>
+                                                    <div class="col-12 col-md-4 col-sm-6">
+                                                        <div class="mb-3"><a
+                                                                href="https://techsignx.com/wp/real-estate-development-service/"><i
+                                                                    class="bi bi-house-door"></i> Real Estate</a></div>
+                                                        <div class="mb-3"><a
+                                                                href="https://techsignx.com/wp/fitness-wellness-service-company/"><i
+                                                                    class="bi bi-person-walking"></i> Fitness &
+                                                                Wellness</a>
+                                                        </div>
+                                                        <div class="mb-3"><a
+                                                                href="https://techsignx.com/wp/ecommerce-development-company/"><i
+                                                                    class="bi bi-cart-fill"></i> E Commerce</a></div>
+                                                        <div><a
+                                                                href="https://techsignx.com/wp/sports-service-company/"><i
+                                                                    class="bi bi-bicycle"></i> Sport & Games</a></div>
+                                                    </div>
 
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Resources
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item"
-                                                    href="https://techsignx.com/case-studies/">Case Studies</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Company
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item"
-                                                    href="https://techsignx.com/portfolio">Portfolio</a></li>
-                                            <li><a class="dropdown-item"
-                                                    href="https://techsignx.com/contact-us/">Contact Us</a></li>
-                                            <li><a class="dropdown-item" href="https://techsignx.com/about-us/">About
-                                                    Us</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </span>
+                                                    <div class="col-12 col-md-4 col-sm-6">
+                                                        <div class="mb-3"><a
+                                                                href="https://techsignx.com/wp/healthcare-and-medical-development-services/"><i
+                                                                    class="bi bi-bag-plus"></i> Medical &
+                                                                Healthcare</a>
+                                                        </div>
+                                                        <div class="mb-3"><a
+                                                                href="https://techsignx.com/wp/fintech-company/"><i
+                                                                    class="bi bi-bank"></i> Banking & Finance</a></div>
+                                                        <div class="mb-3"><a
+                                                                href="https://techsignx.com/wp/logistic-development/"><i
+                                                                    class="bi bi-train-freight-front"></i> Logistics &
+                                                                Distributions</a></div>
+                                                        <div><a
+                                                                href="https://techsignx.com/wp/media-entertainment-app-development-services/"><i
+                                                                    class="bi bi-film"></i> Media & Entertainment</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Resources
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item"
+                                                        href="https://techsignx.com/case-studies/">Case Studies</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Company
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item"
+                                                        href="https://techsignx.com/portfolio">Portfolio</a></li>
+                                                <li><a class="dropdown-item"
+                                                        href="https://techsignx.com/contact-us/">Contact Us</a></li>
+                                                <li><a class="dropdown-item"
+                                                        href="https://techsignx.com/about-us/">About
+                                                        Us</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center d-none d-md-inline">
+                            <a class="btn btn-primary contact-us" href="https://techsignx.com/contact-us/">Contact
+                                Us</a>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-center d-none d-md-inline">
-                        <a class="btn btn-primary contact-us" href="https://techsignx.com/contact-us/">Contact Us</a>
-                    </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
     <div class="clearfix"></div>
 
     <main class="wrapper">
         <div class="row">
             <div class="col-12 col-lg-4" style="background-image: url('assets/img/side-img.jpg');">
                 <div class="steps-area h-100">
-                    <div class="steps clearfix"
-                        style="position:relative;float:right;">
+                    <div class="steps clearfix" style="position:relative;float:right;">
                         <ul class="tablist multisteps-form__progress">
                             <li class="multisteps-form__progress-btn js-active current" data-id="1">
                                 <span>1</span>
@@ -476,8 +479,8 @@
                                                             <div class="upload-option text-center">
                                                                 <label for="attach">Upload The Documents</label>
                                                                 <input id="attach" style="visibility:hidden;"
-                                                                    name="file" type="file" onchange="UploadFile()"
-                                                                    id="file">
+                                                                    name="file" type="file"
+                                                                    onchange="UploadFile()" id="file">
                                                                 <input type="hidden" name="File Url" id="fileUrl">
                                                             </div>
                                                             <div id="showFileName">Filename</div>
@@ -808,7 +811,8 @@
                                                     <h5>Date<span class="required">*</span></h5>
                                                 </label>
                                                 <input type="text" name="date" id="date" readonly
-                                                    placeholder="Enter date" style="height: 45px;background-color: white;"
+                                                    placeholder="Enter date"
+                                                    style="height: 45px;background-color: white;"
                                                     class="form-control datepicker  mb-0 px-3">
                                             </div>
 
@@ -822,13 +826,13 @@
                                                 <div class="plan-icon-text text-center active">
                                                     <div class="plan-icon">
 
-                                                        <img src="assets/img/zoom_logo.svg"
-                                                            alt="Zoom" height="50px" width="70px"
-                                                            srcset="">
+                                                        <img src="assets/img/zoom_logo.svg" alt="Zoom"
+                                                            height="50px" width="70px" srcset="">
                                                     </div>
                                                     <div class="plan-text">
                                                         <h3>Zoom</h3>
-                                                        <p class="mb-0">Zoom is a proprietary videotelephony software that free plan allows upto 100
+                                                        <p class="mb-0">Zoom is a proprietary videotelephony software
+                                                            that free plan allows upto 100
                                                             participants, with a 40-minute time restriction.
                                                         </p>
                                                         <input type="radio" name="meeting" id="meeting"
@@ -838,13 +842,13 @@
                                                 <div class="plan-icon-text text-center">
                                                     <div class="plan-icon">
 
-                                                        <img src="assets/img/google_meet.png"
-                                                            alt="Zoom" height="50px" width="50px"
-                                                            srcset="">
+                                                        <img src="assets/img/google_meet.png" alt="Zoom"
+                                                            height="50px" width="50px" srcset="">
                                                     </div>
                                                     <div class="plan-text">
                                                         <h3>Google Meet</h3>
-                                                        <p class="mb-0">Google Meet is a video communication service developed by
+                                                        <p class="mb-0">Google Meet is a video communication service
+                                                            developed by
                                                             Google.
                                                         </p>
                                                         <input type="radio" name="meeting" id="meeting"
@@ -880,16 +884,19 @@
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="https://techsignx.com/"><img src="assets/img/footer.png" class="img-fluid" alt="logo"></a>
+                                <a href="https://techsignx.com/"><img src="assets/img/footer.png" class="img-fluid"
+                                        alt="logo"></a>
                             </div>
                             <div class="footer-text col1">
-                                <p>Techsignx delivers affordable, high-quality IT solutions to streamline processes and boost productivity</p>
+                                <p>Techsignx delivers affordable, high-quality IT solutions to streamline processes and
+                                    boost productivity</p>
                             </div>
                             <div class="footer-social-icon">
                                 <a href="https://www.facebook.com/techsignx/"><i class="bi bi-facebook"></i></a>
                                 <a href="https://x.com/techsignxltd"><i class="fa fa-twitter"></i></a>
                                 <a href="https://www.youtube.com/@techsignxltd"><i class="bi bi-youtube"></i></a>
-                                <a href="https://www.linkedin.com/company/techsignx-ltd/"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/company/techsignx-ltd/"><i
+                                        class="bi bi-linkedin"></i></a>
                                 <a href="https://www.instagram.com/techsignxltd/"><i class="bi bi-instagram"></i></a>
                                 <a href="https://www.pinterest.com/techsignx/"><i class="bi bi-pinterest"></i></a>
 
@@ -919,14 +926,16 @@
                             <div class="footer-text mb-25">
                                 <h3>United Kingdom</h3>
                                 <div class="footer-address">
-                                   <i class="bi bi-geo-alt-fill"></i>
-                                    <a href="https://maps.app.goo.gl/5QaVE9sdw6cTdiSv9">307, Green Lane, Seven Kings, IG39TL, United Kingdom</a>
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <a href="https://maps.app.goo.gl/5QaVE9sdw6cTdiSv9">307, Green Lane, Seven Kings,
+                                        IG39TL, United Kingdom</a>
                                 </div>
 
                                 <h3>India</h3>
                                 <div class="footer-address">
-                                   <i class="bi bi-geo-alt-fill"></i>
-                                    <a href="https://maps.app.goo.gl/3odijdUCprsiCjqP6">23 Tulsi Villa Society, Near ambisan modan school, Laskana Surat, Gujarat India 394185</a>
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <a href="https://maps.app.goo.gl/3odijdUCprsiCjqP6">23 Tulsi Villa Society, Near
+                                        ambisan modan school, Laskana Surat, Gujarat India 394185</a>
                                 </div>
 
                                 <div class="footer-address">
@@ -935,7 +944,7 @@
                                 </div>
 
                                 <div class="footer-address">
-                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <i class="bi bi-telephone-fill" aria-hidden="true"></i>
                                     <a href="tel:+44 7423 506520">+44 7423 506520</a>
                                 </div>
                             </div>
@@ -950,7 +959,8 @@
                 <div class="row">
                     <div class="col-12 text-center ">
                         <div class="copyright-text">
-                            <p>Copyright &copy; 2024,  All rights reserved by <a href="https://techsignx.com/">Techsignx</a></p>
+                            <p>Copyright &copy; 2024, All rights reserved by <a
+                                    href="https://techsignx.com/">Techsignx</a></p>
                         </div>
                     </div>
 
@@ -1018,7 +1028,9 @@
                     $('.multisteps-form__progress-btn').filter('[data-id="2"]').addClass('js-active');
                     $('.multisteps-form__progress-btn').filter('[data-id="2"]').addClass('current');
                     setTimeout(() => {
-                        $("html, body").animate({ scrollTop: 0 }, "fast");
+                        $("html, body").animate({
+                            scrollTop: 0
+                        }, "fast");
                         $("html, body").render();
                     }, 500);
                 }
@@ -1050,7 +1062,9 @@
                     $('.multisteps-form__progress-btn').filter('[data-id="3"]').addClass('js-active');
                     $('.multisteps-form__progress-btn').filter('[data-id="3"]').addClass('current');
                     setTimeout(() => {
-                        $("html, body").animate({ scrollTop: 0 }, "fast");
+                        $("html, body").animate({
+                            scrollTop: 0
+                        }, "fast");
                         $("html, body").render();
                     }, 500);
                 }
