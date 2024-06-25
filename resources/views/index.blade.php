@@ -78,9 +78,9 @@
         </div>
         <div class="navbar-header">
             <div class="container">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 80px;">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 90px;">
                     <div class="container-fluid px-0 d-flex justify-content-between">
-                        <img width="100" height="70"
+                        <img width="100" height="70" style="height: 85px;width:11%;"
                             src="https://techsignx.com/wp-content/uploads/2024/05/ted-300x212.png" alt="">
                         <div class="d-grid justify-content-end justify-content-lg-center">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
