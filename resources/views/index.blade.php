@@ -1031,7 +1031,6 @@
                         $("html, body").animate({
                             scrollTop: 0
                         }, "fast");
-                        $("html, body").render();
                     }, 500);
                 }
             });
@@ -1065,7 +1064,6 @@
                         $("html, body").animate({
                             scrollTop: 0
                         }, "fast");
-                        $("html, body").render();
                     }, 500);
                 }
             });
@@ -1158,7 +1156,7 @@
                 console.log(dataSubmit);
                 $.ajax({
                     type: "POST",
-                    url: "https://script.google.com/macros/s/AKfycbzLXUpUxDf8f0Z-paZCChzzfLL1SLRuvuUgjmFAj60-pb9Ilh0uhDICeYY22AE6Ygbc/exec",
+                    url: "https://script.google.com/macros/s/AKfycbyoB_nMTHGDo4dy2KYyWtzdlsO0BE_6qQ5qrgZpFd2h71U5Z5JKfS_jK5aElmDhNGln/exec",
                     data: dataSubmit,
                     dataType: "JSON",
                     success: function(response) {
